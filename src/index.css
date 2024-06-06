@@ -1,0 +1,63 @@
+:root {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --text-primary: #191919;
+  --bg-primary: #f3f4f8;
+  --terminal-offwhite: #efefef;
+  --terminal-border: #dcdcdc;
+  --terminal-text: #4f4e4e;
+  --terminal-bg-text: rgba(79, 78, 78, 0.5);
+  --text-accent: #f15025;
+  --screen-cover: rgba(243, 244, 248, 0.4);
+  --button-hover: #e7e7e7;
+  --project-btn-hover: rgba(241, 80, 37, 0.4);
+  --faded-header: rgba(0, 0, 0, 0.1);
+  --pfp-layer: rgb(241, 80, 37, 0.15);
+  --primary-gradient: #f15025;
+  --secondary-gradient: #f18425;
+  --project-bg: #fff;
+  --faded-font: rgba(0, 0, 0, 0.7);
+  --project-headline: rgb(231, 231, 231);
+  --input-bg: #e8e9ee;
+  --input-border: #c6c7cc;
+
+  overflow-x: hidden;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+[data-theme="dark"] {
+  --text-primary: #f3f4f8;
+  --bg-primary: #26242e;
+  --terminal-offwhite: #1f1d29;
+  --terminal-border: #23212e;
+  --terminal-text: #cfcaca;
+  --text-accent: #92aef9;
+  --terminal-bg-text: rgba(255, 255, 255, 0.5);
+  --screen-cover: rgba(38, 36, 46, 0.5);
+  --button-hover: #16151e;
+  --project-btn-hover: rgba(146, 174, 249, 0.4);
+  --faded-header: rgba(255, 255, 255, 0.2);
+  --pfp-layer: rgba(86, 129, 246, 0.2);
+  --primary-gradient: #8983f7;
+  --secondary-gradient: #a3dafb;
+  --project-bg: #1d1b23;
+  --faded-font: rgba(255, 255, 255, 0.7);
+  --project-headline: #373443;
+  --input-bg: #3f3c4d;
+  --input-border: #282430;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html.menu-open {
+  overflow-y: hidden;
+}

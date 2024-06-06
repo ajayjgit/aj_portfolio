@@ -1,0 +1,8 @@
+.container {
+  height: 100svh;
+  position: relative;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  display: flex;
+  flex-flow: column;
+}

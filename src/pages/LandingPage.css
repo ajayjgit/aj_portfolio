@@ -1,0 +1,175 @@
+.body-content {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminal-header {
+  background-color: var(--terminal-offwhite);
+  border: 1px solid var(--terminal-border);
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.header-btns {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.header-btn1 {
+  background-color: #f9685c;
+}
+
+.header-btn2 {
+  background-color: #f7c23f;
+}
+
+.header-btn3 {
+  background-color: #1cc947;
+}
+
+.header-btn {
+  height: 20px;
+  width: 20px;
+  border-radius: 180px;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--terminal-text);
+  text-align: center;
+}
+
+.terminal-container {
+  background-color: var(--bg-primary);
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+  width: 70%;
+}
+
+.terminal-bg-text {
+  margin: 1rem 2rem;
+  align-self: flex-start;
+}
+
+.terminal-bg-text p {
+  color: var(--terminal-bg-text);
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+}
+
+.terminal-body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminal-main-text {
+  margin: 5rem 0;
+  width: 80%;
+}
+
+.terminal-main-text p {
+  margin: 0;
+  font-size: 84px;
+  font-weight: 500;
+  line-height: 1;
+  z-index: 5;
+}
+
+.terminal-main-text span:first-child {
+  color: var(--text-accent);
+}
+
+.gsap-animation {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 7px;
+}
+
+.gsap-animation .box {
+  position: absolute;
+  bottom: 8px;
+  display: inline-block;
+  background-color: var(--text-accent);
+  height: 20px;
+  z-index: -1;
+}
+
+.gsap-animation .hi {
+  display: inline-block;
+}
+
+.terminal-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.terminal-btns a {
+  text-decoration: none;
+}
+
+.terminal-btn {
+  all: unset;
+  font-weight: 600;
+  color: var(--terminal-text);
+  background-color: var(--bg-primary);
+  border: 1px solid var(--text-accent);
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.terminal-btn:hover {
+  background-color: var(--button-hover);
+}
+
+@media (max-width: 1440px) {
+  .terminal-main-text p {
+    font-size: 52px;
+  }
+  .terminal-bg-text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .terminal-container {
+    width: 95%;
+  }
+  .terminal-bg-text p {
+    font-size: 14px;
+  }
+  .terminal-main-text p {
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .terminal-main-text {
+    margin: 2rem 0;
+  }
+  .header-btns {
+    display: flex;
+    gap: 5px;
+    margin-left: 10px;
+  }
+  .header-btn {
+    height: 15px;
+    width: 15px;
+    border-radius: 180px;
+  }
+  .header-text p {
+    margin: 0;
+    text-align: center;
+  }
+}
