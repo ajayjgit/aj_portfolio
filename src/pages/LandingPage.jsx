@@ -6,10 +6,9 @@ import "./LandingPage.css";
 
 const LandingPage = () => {
   const words = [
-    " web developer.",
-    " Mobile App engineer.",
-    " software engineer.",
-    
+    " Web Developer.",
+    " Mobile App Developer.",
+    " Software Engineer.",
     " musician.",
 
   ];
