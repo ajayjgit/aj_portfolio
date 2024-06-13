@@ -91,7 +91,7 @@ const About = () => {
           </div>
           <div className="profile-links">
             <a
-              href="www.linkedin.com/in/j-ajay"
+              href="https://www.linkedin.com/in/j-ajay/"
               target="_blank"
               rel="noopener noreferrer"
             >
