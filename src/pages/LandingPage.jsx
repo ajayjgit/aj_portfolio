@@ -8,6 +8,7 @@ const LandingPage = () => {
   const words = [
     " Mobile App Developer.",
      " Web Developer.",
+         " DevOps.",
  
 
   ];
