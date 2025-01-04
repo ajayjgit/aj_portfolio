@@ -6,11 +6,8 @@ import "./LandingPage.css";
 
 const LandingPage = () => {
   const words = [
-    " Mobile App Developer.",
-     " Web Developer.",
-         " DevOps.",
- 
-
+     " DevOps.",
+     "Web Developer.",
   ];
 
   const navigate = useNavigate();
