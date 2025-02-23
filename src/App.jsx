@@ -21,9 +21,9 @@ function App() {
         <Route path="/experience" element={<Layout />}>
           <Route index element={<Experience />} />
         </Route>
-        <Route path="/projects" element={<Layout />}>
+        {/* <Route path="/projects" element={<Layout />}>
           <Route index element={<Projects />} />
-        </Route>
+        </Route> */}
         <Route path="/contact" element={<Layout />}>
           <Route index element={<Contact />} />
         </Route>

@@ -33,7 +33,7 @@ const Contact = () => {
           </div>
           <div className="info">
           <p>  <FaMapMarkerAlt style={{ marginRight: "20px" }} />
-            Nagercoil, Chennai</p>
+            Nagercoil</p>
     
           </div>
         </div>

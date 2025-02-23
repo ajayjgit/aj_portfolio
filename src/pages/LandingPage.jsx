@@ -119,9 +119,9 @@ const LandingPage = () => {
           >
              Experience <span>&#8594;</span>
           </button>
-          <button onClick={projectsNav} className="terminal-btn terminal-btn3">
+          {/* <button onClick={projectsNav} className="terminal-btn terminal-btn3">
              Projects &#8594;
-          </button>
+          </button> */}
           <button onClick={contactNav} className="terminal-btn terminal-btn4">
              Contact &#8594;
           </button>

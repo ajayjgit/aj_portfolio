@@ -63,12 +63,12 @@ const Header = () => {
         setIsMounted(false);
         navigate("/experience");
       }, 1000);
-    } else if (e.target.innerHTML === "Projects") {
-      setTimeout(() => {
-        setMenuState(false);
-        setIsMounted(false);
-        navigate("/projects");
-      }, 1000);
+    // } else if (e.target.innerHTML === "Projects") {
+    //   setTimeout(() => {
+    //     setMenuState(false);
+    //     setIsMounted(false);
+    //     navigate("/projects");
+    //   }, 1000);
     } else if (e.target.innerHTML === "Contact") {
       setTimeout(() => {
         setMenuState(false);
@@ -110,7 +110,7 @@ const Header = () => {
             >
               Experience
             </button>
-            <button
+            {/* <button
               className={
                 currentRoute === "/projects"
                   ? "nav-btn current-page"
@@ -119,7 +119,7 @@ const Header = () => {
               onClick={handleNavigate}
             >
               Projects
-            </button>
+            </button> */}
             <button
               className={
                 currentRoute === "/contact" ? "nav-btn current-page" : "nav-btn"
