@@ -1,30 +1,20 @@
 import { useEffect, useState } from "react";
-import Bloomberg from "../components/experience/Bloomberg";
 import FSA from "../components/experience/FSA";
-import SIG from "../components/experience/SIG";
+import DevOps from "../components/experience/DevOps"; // Make sure DevOps component is imported
 import "./Experience.css";
 
 const Experience = () => {
-  const [fsa, setFSA] = useState(true);
-  const [bloomberg, setBloomberg] = useState(false);
-  const [sig, setSIG] = useState(false);
+  const [fsa, setFSA] = useState(false);  // FSA is hidden initially
+  const [devOps, setDevOps] = useState(true);  // DevOps is shown by default
 
   const handleFSAClick = () => {
-    setFSA(true);
-    setBloomberg(false);
-    setSIG(false);
+    setFSA(true);     // Show FSA experience
+    setDevOps(false); // Hide DevOps experience
   };
 
-  const handleBloombergClick = () => {
-    setBloomberg(true);
-    setFSA(false);
-    setSIG(false);
-  };
-
-  const handleSIGClick = () => {
-    setSIG(true);
-    setFSA(false);
-    setBloomberg(false);
+  const handleDevOpsClick = () => {
+    setDevOps(true);  // Show DevOps experience
+    setFSA(false);    // Hide FSA experience
   };
 
   useEffect(() => {
@@ -53,19 +43,23 @@ const Experience = () => {
             <p></p>
             <div className="experience-terminal-btns">
               <button
-                onClick={handleFSAClick}
+                onClick={handleDevOpsClick}  // Set DevOps as default
                 className="experience-terminal-btn terminal-btn1"
               >
-                Full Stack Developer -Persent &#8594;
+                DevOps Engineer - Present &#8594;
               </button>
-      
-           
+              <button
+                onClick={handleFSAClick}
+                className="experience-terminal-btn terminal-btn2"
+              >
+                Cloud & Backend Developer &#8594;
+              </button>
             </div>
           </div>
           <div className="terminal-content">
             <div className="terminal-experience-text">
-              {fsa && <FSA />}
-   
+              {devOps && <DevOps />}  {/* Show DevOps section by default */}
+              {fsa && <FSA />}  {/* Show FSA section when clicked */}
             </div>
           </div>
         </div>

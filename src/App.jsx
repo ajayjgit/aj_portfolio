@@ -1,4 +1,3 @@
-import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Intro from "./pages/Intro";
 import About from "./pages/About";
@@ -12,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/" element={<Intro />} />
+        <Route path="/" element={<Intro />} />
         <Route path="/home" element={<Layout />}>
           <Route index element={<LandingPage />} />
         </Route>
