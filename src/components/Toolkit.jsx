@@ -26,6 +26,22 @@ const Toolkit = () => {
               <img src="/toolkit-logos/terraform.png" alt="java logo" />
               <p>terraform</p>
             </div>
+            <div className="single-tool-container">
+              <img src="/toolkit-logos/ansible.png" alt="anisble logo" />
+              <p>Ansible</p>
+            </div>
+            <div className="single-tool-container">
+              <img src="/toolkit-logos/jenkins.png" alt="anisble logo" />
+              <p>jenkins</p>
+            </div>
+            <div className="single-tool-container">
+              <img src="/toolkit-logos/prometheu.png" alt="Prometheus logo" />
+              <p>Prometheus</p>
+            </div>
+            <div className="single-tool-container">
+              <img src="/toolkit-logos/grafana.webp" alt="Prometheus logo" />
+              <p>Grafana</p>
+            </div>
           </div>
         </div>
         <div className="tool-section backend">
@@ -33,13 +49,16 @@ const Toolkit = () => {
           <div className="tool-logos">
           <div className="single-tool-container">
               <img src="/toolkit-logos/node.png" alt="node logo" />
-              <p>Node</p>
+              <p>Nodejs</p>
+            </div>
+            <div className="single-tool-container">
+              <img src="/toolkit-logos/express.png" alt="node logo" />
+              <p>Express</p>
             </div>
          
-  
             <div className="single-tool-container">
-              <img src="/toolkit-logos/php.png" alt="PHP logo" />
-              <p>PHP</p>
+              <img src="/toolkit-logos/python.png" alt="python logo" />
+              <p>Python</p>
             </div>
   
           </div>
@@ -94,10 +113,7 @@ const Toolkit = () => {
           <p className="tool-section-header learning-header">Learning</p>
           <div className="tool-logos">
          
-            <div className="single-tool-container">
-              <img src="/toolkit-logos/python.png" alt="python logo" />
-              <p>Python</p>
-            </div>
+            
           </div>
         </div>
       </div>

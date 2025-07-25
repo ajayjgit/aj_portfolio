@@ -70,19 +70,16 @@ const About = () => {
             <h1>About Me</h1>
             <div className="about-text">
               <p>
-                My name is AJAY J. I'm a <span>curious</span> and{" "}
-                <span>passionate</span> fullstack Developer 
-                My passions generally consist of games, photography, and music.
-                
-                <br></br>
-                <br></br>
+                      My name is AJAY J. I'm a <span>curious</span> and <span>passionate</span> DevOps and Backend Developer.
               </p>
+              <br></br>
+              <br></br>
               <p>
-                I aspire to build beautiful products, both <span>visually</span>{" "}
-                and <span>functionally</span>, to enhance{" "}
-                <span>user experience.</span> I love to do project that is tuff and make me give more experience.
+                I strive to build robust, scalable, and efficient systems that are both <span>functional</span> and <span>user-friendly</span>. 
+                I enjoy tackling <span>challenging projects</span> that push me to grow and gain deeper <span>real-world experience</span>.
               </p>
             </div>
+
           </div>
         </div>
         <div className="pfp-container">
