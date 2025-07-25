@@ -46,7 +46,7 @@ const Projects = () => {
           <div className="project-img">
 
               <img
-                src="/ecomm.png"
+                src="/eomm.png"
                 alt="Ecommerce wbsite "
               />
 
