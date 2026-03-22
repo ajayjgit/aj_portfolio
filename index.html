@@ -1,35 +1,1718 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicon/favicon-16x16.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AJAY | Portfolio</title>
+<!DOCTYPE html><html lang="en" dir="ltr"><head>
+    <meta charset="UTF-8">
+
+    <!-- Page Title -->
+    <title>Ajay J - DevOps & Backend Developer Portfolio</title>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Ajay J - DevOps and Backend Developer. Building robust, scalable systems with AWS, Docker, Kubernetes, Node.js. Experienced in CI/CD, automation, and cloud infrastructure.">
+    <meta name="keywords" content="mix_design, resume, portfolio, personal page, cv, template, one page, responsive, html5, css3, creative, clean">
+    <meta name="author" content="mix_design">
+
+    <!-- Viewport Meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- Template Favicon & Icons Start -->
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="icon" href="images/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="img/favicon/manifest.webmanifest">
+    <!-- Template Favicon & Icons End -->
+
+    <!-- Facebook Metadata Start -->
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:title" content="Ajay J - DevOps & Backend Developer Portfolio">
+    <meta property="og:description" content="DevOps and Backend Developer. Building robust, scalable systems with AWS, Docker, Kubernetes, Node.js.">
+    <meta property="og:url" content="https://mixdesign.dev/themeforest/rayo">
+    <meta property="og:image" content="https://mixdesign.dev/themeforest/rayo/img/og-image.jpg">
+    <!-- Facebook Metadata End -->
+
+    <!-- Template Styles Start -->
+    <link rel="stylesheet" type="text/css" href="css/loader.min.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <!-- Template Styles End -->
+
+    <!-- Custom Browser Color Start -->
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FAF7F6">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#161616">
+    <meta name="msapplication-navbutton-color" content="#161616">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Custom Browser Color End -->
+    
   </head>
+
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+
+    <!-- Loader Start -->
+    <div id="loader" class="loader">
+      <div class="loader__wrapper">
+        <div class="loader__content">
+          <div class="loader__count">
+            <span class="count__text">0</span>
+            <span class="count__percent">%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Menu & Menu Hamburger Start -->
+    <nav class="mxd-nav__wrap" data-lenis-prevent="">
+
+      <!-- Hamburger Start -->
+      <div class="mxd-nav__contain loading__fade">
+        <a href="#0" class="mxd-nav__hamburger" aria-label="Menu">
+          <!-- flip element -->
+          <div class="hamburger__base"></div>
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+        </a>
+      </div>
+      <!-- Hamburger End -->
+
+      <!-- Main Navigation Start -->
+      <div class="mxd-menu__wrapper">
+        <!-- background active layer -->
+        <div class="mxd-menu__base"></div>
+        <!-- menu container -->
+        <div class="mxd-menu__contain">
+          <div class="mxd-menu__inner">
+            <!-- left side -->
+            <div class="mxd-menu__left">
+              <p class="mxd-menu__caption menu-fade-in">DevOps & Backend Developer<br>Building scalable systems</p>
+              <div class="main-menu">
+                <nav class="main-menu__content">
+                  <ul id="main-menu" class="main-menu__accordion">
+                    <li class="main-menu__item">
+                      <div class="main-menu__toggle">
+                        <span class="main-menu__link btn btn-anim">
+                          <span class="btn-caption">Home</span>
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" version="1.1" viewBox="0 0 20 20">
+                          <path d="M19.6,9.6h-3.9c-.4,0-1.8-.2-1.8-.2-.6,0-1.1-.2-1.6-.6-.5-.3-.9-.8-1.2-1.2-.3-.4-.4-.9-.5-1.4,0,0,0-1.1-.2-1.5V.4c0-.2-.2-.4-.4-.4s-.4.2-.4.4v4.4c0,.4-.2,1.5-.2,1.5,0,.5-.2,1-.5,1.4-.3.5-.7.9-1.2,1.2s-1,.5-1.6.6c0,0-1.2,0-1.7.2H.4c-.2,0-.4.2-.4.4s.2.4.4.4h4.1c.4,0,1.7.2,1.7.2.6,0,1.1.2,1.6.6.4.3.8.7,1.1,1.1.3.5.5,1,.6,1.6,0,0,0,1.3.2,1.7v4.1c0,.2.2.4.4.4s.4-.2.4-.4v-4.1c0-.4.2-1.7.2-1.7,0-.6.2-1.1.6-1.6.3-.4.7-.8,1.1-1.1.5-.3,1-.5,1.6-.6,0,0,1.3,0,1.8-.2h3.9c.2,0,.4-.2.4-.4s-.2-.4-.4-.4h0Z"></path>
+                        </svg>
+                      </div>
+                      <ul class="submenu">
+                        <li class="submenu__item">
+                          <a href="index-main.html">Main home</a>
+                        </li>
+                        <li class="submenu__item active">
+                          <a href="index-software-development-company.html">Software development company</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="index-freelancer-portfolio.html">Freelancer portfolio</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="index-digital-agency.html">Digital agency</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="index-creative-design-studio.html">Creative design studio</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="index-personal-portfolio.html">Personal portfolio</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="index-web-agency.html">Web agency</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="index-creative-developer.html">Creative developer</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="index-designer.html">Designer</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="main-menu__item">
+                      <div class="main-menu__toggle">
+                        <span class="main-menu__link btn btn-anim">
+                          <span class="btn-caption">Works</span>
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" version="1.1" viewBox="0 0 20 20">
+                          <path d="M19.6,9.6h-3.9c-.4,0-1.8-.2-1.8-.2-.6,0-1.1-.2-1.6-.6-.5-.3-.9-.8-1.2-1.2-.3-.4-.4-.9-.5-1.4,0,0,0-1.1-.2-1.5V.4c0-.2-.2-.4-.4-.4s-.4.2-.4.4v4.4c0,.4-.2,1.5-.2,1.5,0,.5-.2,1-.5,1.4-.3.5-.7.9-1.2,1.2s-1,.5-1.6.6c0,0-1.2,0-1.7.2H.4c-.2,0-.4.2-.4.4s.2.4.4.4h4.1c.4,0,1.7.2,1.7.2.6,0,1.1.2,1.6.6.4.3.8.7,1.1,1.1.3.5.5,1,.6,1.6,0,0,0,1.3.2,1.7v4.1c0,.2.2.4.4.4s.4-.2.4-.4v-4.1c0-.4.2-1.7.2-1.7,0-.6.2-1.1.6-1.6.3-.4.7-.8,1.1-1.1.5-.3,1-.5,1.6-.6,0,0,1.3,0,1.8-.2h3.9c.2,0,.4-.2.4-.4s-.2-.4-.4-.4h0Z"></path>
+                        </svg>
+                      </div>
+                      <ul class="submenu">
+                        <li class="submenu__item">
+                          <a href="works-simple.html">Portfolio</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="works-masonry.html">Works masonry</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="project-details.html">Project details</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="main-menu__item">
+                      <div class="main-menu__toggle">
+                        <span class="main-menu__link btn btn-anim">
+                          <span class="btn-caption">Pages</span>
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" version="1.1" viewBox="0 0 20 20">
+                          <path d="M19.6,9.6h-3.9c-.4,0-1.8-.2-1.8-.2-.6,0-1.1-.2-1.6-.6-.5-.3-.9-.8-1.2-1.2-.3-.4-.4-.9-.5-1.4,0,0,0-1.1-.2-1.5V.4c0-.2-.2-.4-.4-.4s-.4.2-.4.4v4.4c0,.4-.2,1.5-.2,1.5,0,.5-.2,1-.5,1.4-.3.5-.7.9-1.2,1.2s-1,.5-1.6.6c0,0-1.2,0-1.7.2H.4c-.2,0-.4.2-.4.4s.2.4.4.4h4.1c.4,0,1.7.2,1.7.2.6,0,1.1.2,1.6.6.4.3.8.7,1.1,1.1.3.5.5,1,.6,1.6,0,0,0,1.3.2,1.7v4.1c0,.2.2.4.4.4s.4-.2.4-.4v-4.1c0-.4.2-1.7.2-1.7,0-.6.2-1.1.6-1.6.3-.4.7-.8,1.1-1.1.5-.3,1-.5,1.6-.6,0,0,1.3,0,1.8-.2h3.9c.2,0,.4-.2.4-.4s-.2-.4-.4-.4h0Z"></path>
+                        </svg>
+                      </div>
+                      <ul class="submenu">
+                        <li class="submenu__item">
+                          <a href="about-me.html">About me</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="about-us.html">About us</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="services.html">Services</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="team.html">Our team</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="faq.html">FAQ page</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="404.html">404 error page</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="index.html">Landing page</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="main-menu__item">
+                      <div class="main-menu__toggle">
+                        <span class="main-menu__link btn btn-anim">
+                          <span class="btn-caption">Insights</span>
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" version="1.1" viewBox="0 0 20 20">
+                          <path d="M19.6,9.6h-3.9c-.4,0-1.8-.2-1.8-.2-.6,0-1.1-.2-1.6-.6-.5-.3-.9-.8-1.2-1.2-.3-.4-.4-.9-.5-1.4,0,0,0-1.1-.2-1.5V.4c0-.2-.2-.4-.4-.4s-.4.2-.4.4v4.4c0,.4-.2,1.5-.2,1.5,0,.5-.2,1-.5,1.4-.3.5-.7.9-1.2,1.2s-1,.5-1.6.6c0,0-1.2,0-1.7.2H.4c-.2,0-.4.2-.4.4s.2.4.4.4h4.1c.4,0,1.7.2,1.7.2.6,0,1.1.2,1.6.6.4.3.8.7,1.1,1.1.3.5.5,1,.6,1.6,0,0,0,1.3.2,1.7v4.1c0,.2.2.4.4.4s.4-.2.4-.4v-4.1c0-.4.2-1.7.2-1.7,0-.6.2-1.1.6-1.6.3-.4.7-.8,1.1-1.1.5-.3,1-.5,1.6-.6,0,0,1.3,0,1.8-.2h3.9c.2,0,.4-.2.4-.4s-.2-.4-.4-.4h0Z"></path>
+                        </svg>
+                      </div>
+                      <ul class="submenu">
+                        <li class="submenu__item">
+                          <a href="blog-standard.html">Blog standard</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="blog-creative.html">Blog creative</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="blog-article.html">Single post</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="main-menu__item">
+                      <a class="main-menu__link btn btn-anim" href="contact.html">
+                        <span class="btn-caption">Contact</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <!-- right side -->
+            <div class="mxd-menu__right">
+              <div class="menu-promo">
+                <div class="menu-promo__content">
+<p class="menu-promo__caption menu-fade-in">👋 Nice to see you!<br>I'm Ajay J, DevOps &
+                    Backend Developer based in Nagercoil, India</p>
+                  <div class="menu-promo__video">
+                    <video class="menu-video" id="inner-video" preload="auto" autoplay="autoplay" loop="loop" muted="muted" poster="video/540x310_video-01.webp">
+                      <source type="video/mp4" src="media/540x310_video-01.mp4">
+                      <source type="video/webm" src="media/540x310_video-01.webm">
+                      <source type="video/ogv" src="540x310_video-01.ogv">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- data bottom line -->
+            <div class="mxd-menu__data menu-fade-in">
+              <p class="t-xsmall">
+                Made with
+                <i class="ph-fill ph-heart t-additional"></i>
+                by
+                <a class="no-effect" href="https://1.envato.market/EKA9WD" target="_blank">Mix_Design</a>
+              </p>
+              <p class="t-xsmall">
+                <i class="ph ph-copyright"></i>
+                2025
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Navigation End -->
+
+    </nav>
+    <!-- Menu & Menu Hamburger End -->
+
+    <!-- Header Start -->
+    <header id="header" class="mxd-header">
+      <!-- header logo -->
+      <div class="mxd-header__logo loading__fade">
+        <a href="index-main.html" class="mxd-logo">
+          <!-- logo icon -->
+          <svg class="mxd-logo__image" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve">
+            <style type="text/css">
+              .mxd-logo__bg{fill:var(--base-opp);}
+              .mxd-logo__cat{clip-path:url(index-software-development-company.html#mxd-logo__id);fill:var(--base);}
+            </style>
+            <path class="mxd-logo__bg" d="M56,28c0,11.1-2.9,28-28,28S0,39.1,0,28S2.9,0,28,0S56,16.9,56,28z"></path>
+            <g>
+              <defs>
+                <path id="mxd-logo__clippath" d="M28,0C2.9,0,0,16.9,0,28s2.9,28,28,28s28-16.9,28-28S53.1,0,28,0z"></path>
+              </defs>
+              <clipPath id="mxd-logo__id">
+                <use xlink:href="#mxd-logo__clippath" style="overflow:visible;"></use>
+              </clipPath>
+              <path class="mxd-logo__cat" d="M33.6,34.5h0.9
+                c0.5,0,0.9,0.4,0.9,0.9v3.7c0,0.5-0.4,0.9-0.9,0.9h-0.9c-0.5,0-0.9-0.4-0.9-0.9v-3.7C32.7,34.9,33.1,34.5,33.6,34.5z M20.5,37.3
+                v1.9c0,0.5,0.4,0.9,0.9,0.9h0.9c0.5,0,0.9-0.4,0.9-0.9v-3.7c0-0.5-0.4-0.9-0.9-0.9h-0.9c-0.5,0-0.9,0.4-0.9,0.9V37.3L20.5,37.3z
+                M39.2,21.5v0.9c0,0.5-0.4,0.9-0.9,0.9h-0.9c-0.5,0-0.9-0.4-0.9-0.9v-0.9c0-0.5,0.4-0.9,0.9-0.9h0.9C38.8,20.5,39.2,21,39.2,21.5z
+                M34.5,26.1h0.9c0.5,0,0.9-0.4,0.9-0.9v-0.9c0-0.5-0.4-0.9-0.9-0.9h-0.9c-0.5,0-0.9,0.4-0.9,0.9v0.9C33.6,25.7,34,26.1,34.5,26.1z
+                M28,26.1h-4.7c-0.5,0-0.9,0.4-0.9,0.9V28c0,0.5,0.4,0.9,0.9,0.9h9.3c0.5,0,0.9-0.4,0.9-0.9v-0.9c0-0.5-0.4-0.9-0.9-0.9H28L28,26.1
+                z M19.6,24.3v0.9c0,0.5,0.4,0.9,0.9,0.9h0.9c0.5,0,0.9-0.4,0.9-0.9v-0.9c0-0.5-0.4-0.9-0.9-0.9h-0.9C20,23.3,19.6,23.8,19.6,24.3z
+                M16.8,21.5v0.9c0,0.5,0.4,0.9,0.9,0.9h0.9c0.5,0,0.9-0.4,0.9-0.9v-0.9c0-0.5-0.4-0.9-0.9-0.9h-0.9C17.2,20.5,16.8,21,16.8,21.5z
+                M14,26.1v4.7c0,0.5,0.4,0.9,0.9,0.9h0.9c0.5,0,0.9-0.4,0.9-0.9v-6.5c0-0.5-0.4-0.9-0.9-0.9h-0.9c-0.5,0-0.9,0.4-0.9,0.9V26.1
+                L14,26.1z M11.2,34.5v1.9c0,0.5-0.4,0.9-0.9,0.9H7.5c-0.5,0-0.9,0.4-0.9,0.9v0.9c0,0.5,0.4,0.9,0.9,0.9h0.9c0.5,0,0.9,0.4,0.9,0.9
+                V42c0,0.5-0.4,0.9-0.9,0.9H7.5c-0.5,0-0.9,0.4-0.9,0.9v0.9c0,0.5,0.4,0.9,0.9,0.9h0.9c0.5,0,0.9,0.4,0.9,0.9V56
+                c0,0.5,0.4,0.9,0.9,0.9h0.9c0.5,0,0.9-0.4,0.9-0.9v-6.5c0-0.5,0.4-0.9,0.9-0.9h3.7c0.5,0,0.9-0.4,0.9-0.9v-0.9
+                c0-0.5-0.4-0.9-0.9-0.9h-3.7c-0.5,0-0.9-0.4-0.9-0.9v-6.5c0-0.5,0.4-0.9,0.9-0.9c0.5,0,0.9-0.4,0.9-0.9v-3.7c0-0.5-0.4-0.9-0.9-0.9
+                h-0.9c-0.5,0-0.9,0.4-0.9,0.9L11.2,34.5L11.2,34.5z M42,26.1v-1.9c0-0.5-0.4-0.9-0.9-0.9h-0.9c-0.5,0-0.9,0.4-0.9,0.9v6.5
+                c0,0.5,0.4,0.9,0.9,0.9h0.9c0.5,0,0.9-0.4,0.9-0.9V26.1L42,26.1z M49.5,39.2v-0.9c0-0.5-0.4-0.9-0.9-0.9h-2.8
+                c-0.5,0-0.9-0.4-0.9-0.9v-3.7c0-0.5-0.4-0.9-0.9-0.9h-0.9c-0.5,0-0.9,0.4-0.9,0.9v3.7c0,0.5,0.4,0.9,0.9,0.9c0.5,0,0.9,0.4,0.9,0.9
+                v6.5c0,0.5-0.4,0.9-0.9,0.9h-3.7c-0.5,0-0.9,0.4-0.9,0.9v0.9c0,0.5,0.4,0.9,0.9,0.9h3.7c0.5,0,0.9,0.4,0.9,0.9V56
+                c0,0.5,0.4,0.9,0.9,0.9h0.9c0.5,0,0.9-0.4,0.9-0.9v-9.3c0-0.5,0.4-0.9,0.9-0.9h0.9c0.5,0,0.9-0.4,0.9-0.9v-0.9
+                c0-0.5-0.4-0.9-0.9-0.9h-0.9c-0.5,0-0.9-0.4-0.9-0.9v-0.9c0-0.5,0.4-0.9,0.9-0.9h0.9C49,40.1,49.5,39.7,49.5,39.2L49.5,39.2z"></path>
+            </g>
+          </svg>
+          <!-- logo text -->
+          <span class="mxd-logo__text">Ajay J<br>Portfolio</span>
+        </a>
+      </div>
+      <!-- header controls -->
+      <div class="mxd-header__controls loading__fade">
+        <button id="color-switcher" class="mxd-color-switcher" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
+        <a class="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right-up" href="mailto:ajayj11jul1999@gmail.com?subject=Portfolio%20Inquiry" aria-label="Say Hello">
+          <span class="btn-caption">Say Hello</span>
+          <i class="ph-bold ph-arrow-up-right"></i>
+        </a>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Page Content Start -->
+    <main id="mxd-page-content" class="mxd-page-content">
+
+      <!-- Hero Section Start -->
+      <div class="mxd-section mxd-hero-section padding-grid-pre-mtext">
+        <div class="mxd-hero-03">
+          <div class="mxd-hero-03__wrap loading-wrap">
+            <!-- top part -->
+            <div class="mxd-hero-03__top">
+              <!-- marquee -->
+              <div class="mxd-hero-03__marquee loading__item">
+                <!-- Marquee Start -->
+                <div class="marquee marquee-right--gsap">
+                  <div class="marquee__toright">
+                    <!-- item -->
+                    <div class="marquee__item one-line">
+                      <div class="hero-03-marquee__video">
+                        <video preload="auto" autoplay="autoplay" loop="loop" muted="muted" poster="video/hero/hero-video-02.webp">
+                          <source type="video/mp4" src="media/hero-video-02.mp4">
+                          <source type="video/webm" src="media/hero-video-02.webm">
+                          <source type="video/ogv" src="hero-video-02.ogv">
+                        </video>
+                      </div>
+                    </div>
+                    <!-- item -->
+                    <div class="marquee__item one-line">
+                      <div class="hero-03-marquee__image">
+                        <img class="mxd-move" src="images/29_hero-img.webp" alt="Image">
+                      </div>
+                    </div>
+                    <!-- item -->
+                    <div class="marquee__item one-line">
+                      <div class="hero-03-marquee__video">
+                        <video preload="auto" autoplay="autoplay" loop="loop" muted="muted" poster="video/hero/hero-video-01.webp">
+                          <source type="video/mp4" src="media/hero-video-01.mp4">
+                          <source type="video/webm" src="media/hero-video-01.webm">
+                          <source type="video/ogv" src="hero-video-01.ogv">
+                        </video>
+                      </div>
+                    </div>
+                    <!-- item -->
+                    <div class="marquee__item one-line">
+                      <div class="hero-03-marquee__image">
+                        <img class="mxd-rotate-slow" src="images/28_hero-img.webp" alt="Image">
+                      </div>
+                    </div>
+                    <!-- item -->
+                    <div class="marquee__item one-line">
+                      <div class="hero-03-marquee__image">
+                        <img class="mxd-move" src="images/30_hero-img.webp" alt="Image">
+                      </div>
+                    </div>
+                    <!-- item -->
+                    <div class="marquee__item one-line">
+                      <div class="hero-03-marquee__image">
+                        <img class="mxd-pulse-small" src="images/24_hero-img.webp" alt="Image">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Marquee End -->
+              </div>
+              <!-- headline -->
+              <div class="mxd-hero-03__headline">
+                <p class="hero-03-headline__caption loading__item">DevOps & Backend<br>Developer</p>
+                <h1 class="hero-03-headline__title loading__item">
+                  <span class="hero-03-headline__hidden">Ajay J</span>
+                  <svg class="hero-03-headline__svg-mobile" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 238.2 108.3" style="enable-background:new 0 0 238.2 108.3;" xml:space="preserve">
+                  <path d="M4.9,40.8V10.7H0V0.8h10.1v7.7h2.8C14,5.8,15.7,3.8,18,2.4s5-2.1,7.9-2.1h3.3v8.5h-3.8c-3.6,0-6.4,1-8.1,3.1
+                    c-1.8,2.1-2.7,4.9-2.7,8.3v20.4H4.9V40.8z M69,30.9L69,30.9l-0.1-15.3c0-5.1-1.5-8.9-4.6-11.6c-3.1-2.7-7.5-4-13.4-4
+                    C45,0,41.5,1.1,38.3,3.4c-3.2,2.2-5.2,5.5-6.1,9.8h9.9C43.1,9.7,46,8,50.8,8c4.8,0,8.5,2.4,8.5,7.3v1.6H47.1
+                    c-5.1,0-8.9,1.1-11.6,3.2c-2.7,2.1-4,5.3-4,9.1c0,3.8,1.3,6.7,4,9c2.6,2.3,6.3,3.4,11,3.4s6.2-0.6,8.6-1.9c2.3-1.2,4.2-3,5.6-5.3
+                    h2.8v6.4h10.2v-9.9H69z M59.4,24.5L59.4,24.5c0,1.8-0.5,3.4-1.5,4.8s-2.4,2.5-4.1,3.3s-3.7,1.2-5.9,1.2c-2.2,0-3.9-0.5-5.1-1.4
+                    c-1.2-0.9-1.8-2.2-1.8-3.8c0-3.3,2.2-5,6.7-5h11.7V24.5z M78.9,56.8v-7.9H88l3.4-8.3L73.9,0.8h10.5l12,28.3h0.3l11.6-28.3h10.1
+                    l-17.1,40l-3.5,8.3c-1.1,2.4-2.2,4.3-3.5,5.7s-3.3,2-6,2H78.9L78.9,56.8z M159.2,9.8L159.2,9.8c-1.7-3.2-4.2-5.6-7.3-7.3
+                    C148.8,0.8,145,0,140.7,0s-8,0.8-11.2,2.5s-5.7,4.1-7.4,7.2c-1.7,3.1-2.6,6.8-2.6,11.1s0.9,7.9,2.6,11c1.8,3.1,4.2,5.5,7.4,7.2
+                    s6.9,2.6,11.2,2.6s8-0.8,11.2-2.5c3.2-1.7,5.6-4.1,7.3-7.2c1.7-3.1,2.6-6.8,2.6-11S160.9,12.9,159.2,9.8z M149,29.6v0.1
+                    c-2,2.1-4.7,3.2-8.3,3.2c-3.6,0-6.4-1.1-8.4-3.2c-2-2.2-3-5.2-3-9c0-3.8,1-6.7,3-8.9c2-2.1,4.8-3.2,8.4-3.2s6.3,1.1,8.3,3.2
+                    c1.9,2.1,2.9,5.1,2.9,8.9C151.9,24.5,150.9,27.4,149,29.6z M23.6,108.3c-5.8,0-10.3-1.2-13.7-3.6s-5.1-5.8-5.4-10.2h9.7
+                    c0.3,2.1,1.3,3.6,2.9,4.6s3.9,1.5,6.9,1.5c5.1,0,7.7-1.5,7.7-4.4s-0.4-2.2-1.2-2.9s-2.1-1.2-3.9-1.5l-8.9-1.7C9.9,88.6,6,84.9,6,79
+                    s1.5-6.8,4.5-9s7.1-3.4,12.3-3.4s9.5,1.1,12.6,3.4s4.8,5.5,5.2,9.7H31c-0.5-2-1.4-3.5-2.8-4.4s-3.3-1.4-5.8-1.4s-4,0.4-5.2,1.1
+                    s-1.8,1.8-1.8,3.1s0.4,1.8,1.1,2.5c0.8,0.6,1.9,1.1,3.6,1.4l9,1.7c4.1,0.8,7.1,2.1,9,4s2.9,4.4,2.9,7.5s-1.5,7.2-4.5,9.5
+                    s-7.3,3.4-12.9,3.4l0,0V108.3z M59.1,107.5c-2.6,0-4.6-0.7-6.1-2c-1.4-1.3-2.2-3.4-2.2-6.1V75.2h-7.1v-7.7h7.1v-12h9.7v12h9.7v7.7
+                    h-9.5v24.5h10.5v7.8H59.1L59.1,107.5z M93.9,108.2c-5.5,0-9.7-1.5-12.6-4.4S76.9,97,76.9,92V67.5h9.9V90c0,3.1,0.8,5.5,2.4,7
+                    c1.6,1.6,4,2.4,7.1,2.4s5.9-0.8,7.7-2.5c1.8-1.7,2.7-4.1,2.7-7.1V67.5h9.9v30.1h5v9.9h-10.2v-6.4h-2.8c-1.6,2.3-3.5,4.1-5.8,5.3
+                    S97.5,108.2,93.9,108.2L93.9,108.2L93.9,108.2z M167.1,97.6L167.1,97.6V51.4h-9.9v21.8h-0.3c-1.2-2.1-2.8-3.8-5-4.9
+                    c-2.2-1.1-4.8-1.7-7.8-1.7s-7.1,0.9-9.8,2.6c-2.7,1.7-4.8,4.1-6.3,7.2c-1.5,3.1-2.2,6.8-2.2,11s0.7,7.8,2.2,11
+                    c1.5,3.1,3.7,5.6,6.5,7.3c2.8,1.7,6.3,2.6,10.4,2.6c3.3,0,6.1-0.6,8.5-1.9c2.4-1.2,4.2-3,5.7-5.3h2.8v6.4H172v-9.9H167.1z
+                    M157.2,89.7c0,3.1-0.9,5.5-2.8,7.3c-1.9,1.8-4.4,2.7-7.6,2.7s-6.3-1.1-8.1-3.2c-1.9-2.2-2.8-5.1-2.8-9c0-3.9,0.9-6.8,2.8-9
+                    c1.9-2.1,4.6-3.2,8.1-3.2s5.7,0.9,7.6,2.7c1.9,1.8,2.8,4.2,2.8,7.3C157.2,85.3,157.2,89.7,157.2,89.7z M183.8,63.1
+                    c-1.6,0-2.9-0.5-4-1.6s-1.6-2.4-1.6-4s0.5-2.9,1.6-4s2.4-1.6,4-1.6s2.9,0.5,4,1.6s1.6,2.4,1.6,4s-0.5,2.9-1.6,4
+                    S185.4,63.1,183.8,63.1z M178.9,107.5v-40h9.9v40H178.9z M235.6,76.5v-0.1c-1.7-3.1-4.2-5.5-7.3-7.2c-3.1-1.7-7-2.5-11.2-2.5
+                    c-4.2,0-8,0.8-11.2,2.5c-3.2,1.7-5.7,4.1-7.4,7.2c-1.7,3.1-2.6,6.8-2.6,11.1s0.9,7.9,2.6,11c1.8,3.1,4.2,5.5,7.4,7.2
+                    c3.2,1.7,6.9,2.6,11.2,2.6c4.3,0,8-0.8,11.2-2.5c3.2-1.7,5.6-4.1,7.3-7.2c1.7-3.1,2.6-6.8,2.6-11S237.3,79.6,235.6,76.5z
+                    M225.3,96.3L225.3,96.3c-2,2.2-4.7,3.3-8.3,3.3c-3.6,0-6.4-1.1-8.4-3.2c-2-2.2-3-5.2-3-9c0-3.8,1-6.7,3-8.9c2-2.1,4.8-3.2,8.4-3.2
+                    s6.3,1.1,8.3,3.2c2,2.1,2.9,5.1,2.9,8.9C228.2,91.2,227.2,94.1,225.3,96.3z"></path>
+                  </svg>
+                  <svg class="hero-03-headline__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400.26 72" style="enable-background:new 0 0 400.26 72;" xml:space="preserve">
+                  <path d="M4.93,56V25.93H0V16h10.13v7.73h2.8c1.11-2.67,2.82-4.69,5.13-6.07c2.31-1.38,4.96-2.07,7.93-2.07h3.33v8.53h-3.8
+                    c-3.65,0-6.36,1.04-8.13,3.13c-1.78,2.09-2.67,4.87-2.67,8.33V56H4.93z M46.53,56.73c-4.67,0-8.32-1.13-10.97-3.4
+                    c-2.65-2.27-3.97-5.27-3.97-9c0-3.91,1.34-6.93,4.03-9.07c2.69-2.13,6.57-3.2,11.63-3.2h12.2v-1.6c0-4.89-2.84-7.33-8.53-7.33
+                    c-4.84,0-7.76,1.73-8.73,5.2h-9.93c0.84-4.27,2.87-7.52,6.07-9.77c3.2-2.24,7.4-3.37,12.6-3.37c5.87,0,10.33,1.32,13.4,3.97
+                    c3.07,2.64,4.6,6.5,4.6,11.57v15.33h4.73V56h-10.2v-6.4h-2.8c-1.38,2.27-3.23,4.02-5.57,5.27C52.77,56.11,49.91,56.73,46.53,56.73z
+                    M48,49.07c2.18,0,4.13-0.41,5.87-1.23c1.73-0.82,3.1-1.93,4.1-3.33s1.5-2.97,1.5-4.7v-0.93H47.8c-4.49,0-6.73,1.67-6.73,5
+                    c0,1.65,0.61,2.92,1.83,3.83C44.12,48.61,45.82,49.07,48,49.07z M78.93,72v-7.93H88l3.4-8.27L73.93,16H84.4l12,28.33h0.33L108.33,16
+                    h10.07l-17.13,40l-3.47,8.27c-1.07,2.44-2.23,4.34-3.5,5.7C93.03,71.32,91.02,72,88.27,72H78.93z M140.8,56.8
+                    c-4.31,0-8.06-0.86-11.23-2.57c-3.18-1.71-5.64-4.12-7.4-7.23c-1.76-3.11-2.63-6.78-2.63-11c0-4.27,0.88-7.96,2.63-11.07
+                    c1.76-3.11,4.23-5.51,7.43-7.2c3.2-1.69,6.93-2.53,11.2-2.53c4.36,0,8.1,0.84,11.23,2.53c3.13,1.69,5.57,4.09,7.3,7.2
+                    c1.73,3.11,2.6,6.8,2.6,11.07c0,4.22-0.87,7.9-2.6,11.03c-1.73,3.13-4.18,5.54-7.33,7.23C148.84,55.96,145.11,56.8,140.8,56.8z
+                    M140.8,48.13c3.55,0,6.31-1.08,8.27-3.23c1.96-2.16,2.93-5.12,2.93-8.9c0-3.82-0.98-6.8-2.93-8.93c-1.96-2.13-4.71-3.2-8.27-3.2
+                    c-3.6,0-6.39,1.07-8.37,3.2c-1.98,2.13-2.97,5.09-2.97,8.87c0,3.82,0.99,6.81,2.97,8.97C134.41,47.06,137.2,48.13,140.8,48.13z
+                    M185.6,56.8c-5.78,0-10.33-1.21-13.67-3.63c-3.33-2.42-5.13-5.81-5.4-10.17h9.67c0.31,2.09,1.27,3.63,2.87,4.63
+                    c1.6,1,3.91,1.5,6.93,1.5c5.11,0,7.67-1.47,7.67-4.4c0-1.24-0.39-2.2-1.17-2.87c-0.78-0.67-2.08-1.18-3.9-1.53l-8.87-1.67
+                    c-7.78-1.51-11.67-5.2-11.67-11.07c0-3.78,1.49-6.79,4.47-9.03c2.98-2.24,7.07-3.37,12.27-3.37c5.29,0,9.48,1.14,12.57,3.43
+                    s4.81,5.52,5.17,9.7h-9.6c-0.49-2-1.41-3.46-2.77-4.37c-1.36-0.91-3.3-1.37-5.83-1.37c-2.27,0-4,0.36-5.2,1.07
+                    c-1.2,0.71-1.8,1.76-1.8,3.13c0,1.02,0.38,1.84,1.13,2.47c0.75,0.62,1.96,1.09,3.6,1.4l9,1.73c4.09,0.8,7.09,2.13,9,4
+                    c1.91,1.87,2.87,4.38,2.87,7.53c0,4.04-1.49,7.2-4.47,9.47C195.49,55.67,191.2,56.8,185.6,56.8z M221.06,56c-2.62,0-4.66-0.67-6.1-2
+                    c-1.45-1.33-2.17-3.36-2.17-6.07v-24.2h-7.07V16h7.13V4h9.73v12h9.67v7.73h-9.53V48.2h10.47V56H221.06z M255.86,56.73
+                    c-5.47,0-9.68-1.46-12.63-4.37c-2.96-2.91-4.43-6.85-4.43-11.83V16h9.93v22.53c0,3.11,0.8,5.46,2.4,7.03
+                    c1.6,1.58,3.98,2.37,7.13,2.37c3.33,0,5.89-0.84,7.67-2.53c1.78-1.69,2.67-4.07,2.67-7.13V16h9.93v30.07h5V56h-10.2v-6.4h-2.8
+                    c-1.56,2.31-3.5,4.08-5.83,5.3C262.36,56.12,259.42,56.73,255.86,56.73z M307,56.8c-4.09,0-7.56-0.86-10.4-2.57
+                    c-2.84-1.71-5.01-4.13-6.5-7.27c-1.49-3.13-2.23-6.79-2.23-10.97c0-4.22,0.72-7.89,2.17-11c1.44-3.11,3.53-5.52,6.27-7.23
+                    c2.73-1.71,6.01-2.57,9.83-2.57c3.02,0,5.62,0.57,7.8,1.7c2.18,1.13,3.84,2.77,5,4.9h0.27V0h9.93v46.07h4.93V56h-10.13v-6.4h-2.8
+                    c-1.42,2.31-3.31,4.09-5.67,5.33C313.11,56.18,310.28,56.8,307,56.8z M308.73,48.2c3.2,0,5.74-0.9,7.63-2.7
+                    c1.89-1.8,2.83-4.23,2.83-7.3v-4.4c0-3.07-0.94-5.5-2.83-7.3c-1.89-1.8-4.43-2.7-7.63-2.7c-3.56,0-6.27,1.08-8.13,3.23
+                    c-1.87,2.16-2.8,5.14-2.8,8.97c0,3.82,0.93,6.81,2.8,8.97C302.46,47.12,305.17,48.2,308.73,48.2z M345.86,11.6
+                    c-1.56,0-2.88-0.54-3.97-1.63c-1.09-1.09-1.63-2.41-1.63-3.97c0-1.56,0.54-2.88,1.63-3.97c1.09-1.09,2.41-1.63,3.97-1.63
+                    c1.55,0,2.88,0.54,3.97,1.63c1.09,1.09,1.63,2.41,1.63,3.97c0,1.56-0.54,2.88-1.63,3.97C348.74,11.06,347.42,11.6,345.86,11.6z
+                    M340.93,56V16h9.93v40H340.93z M379.13,56.8c-4.31,0-8.06-0.86-11.23-2.57c-3.18-1.71-5.64-4.12-7.4-7.23
+                    c-1.76-3.11-2.63-6.78-2.63-11c0-4.27,0.88-7.96,2.63-11.07c1.76-3.11,4.23-5.51,7.43-7.2c3.2-1.69,6.93-2.53,11.2-2.53
+                    c4.36,0,8.1,0.84,11.23,2.53c3.13,1.69,5.57,4.09,7.3,7.2c1.73,3.11,2.6,6.8,2.6,11.07c0,4.22-0.87,7.9-2.6,11.03
+                    c-1.73,3.13-4.18,5.54-7.33,7.23C387.17,55.96,383.44,56.8,379.13,56.8z M379.13,48.13c3.55,0,6.31-1.08,8.27-3.23
+                    c1.96-2.16,2.93-5.12,2.93-8.9c0-3.82-0.98-6.8-2.93-8.93c-1.96-2.13-4.71-3.2-8.27-3.2c-3.6,0-6.39,1.07-8.37,3.2
+                    c-1.98,2.13-2.97,5.09-2.97,8.87c0,3.82,0.99,6.81,2.97,8.97C372.74,47.06,375.53,48.13,379.13,48.13z"></path>
+                  </svg>
+                </h1>
+              </div>
+            </div>
+            <!-- bottom part -->
+            <div class="mxd-hero-03__bottom">
+              <div class="mxd-container">
+                <!-- video divider -->
+                <div class="mxd-divider">
+                  <div class="mxd-divider__video">
+                    <video class="video parallax-video" preload="auto" autoplay="autoplay" loop="loop" muted="muted" poster="video/1920x1080_video-04.webp">
+                      <source type="video/mp4" src="media/1920x1080_video-04.mp4">
+                      <source type="video/webm" src="media/1920x1080_video-04.webm">
+                      <source type="video/ogv" src="1920x1080_video-04.ogv">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Section End -->
+
+      <!-- Section - Marquee Text One Line Start -->
+      <div class="mxd-section padding-mtext-pre-grid">
+        <div class="mxd-container fullwidth-container">
+
+          <!-- Block - Marquee Text One Line Start -->
+          <div class="mxd-block">
+            <div class="marquee marquee-right--gsap muted-extra">
+              <div class="marquee__toright">
+                <!-- single item -->
+                <div class="marquee__item one-line item-regular text">
+                  <p class="marquee__text">Design</p>
+                  <div class="marquee__image">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="currentColor">
+                      <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                        c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                        c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                        C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                        c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                        s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                        c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                        "></path>
+                    </svg>
+                  </div>
+                </div>
+                <!-- single item -->
+                <div class="marquee__item one-line item-regular text">
+                  <p class="marquee__text">Development</p>
+                  <div class="marquee__image">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="currentColor">
+                      <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                        c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                        c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                        C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                        c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                        s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                        c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                        "></path>
+                    </svg>
+                  </div>
+                </div>
+                <!-- single item -->
+                <div class="marquee__item one-line item-regular text">
+                  <p class="marquee__text">Branding</p>
+                  <div class="marquee__image">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="currentColor">
+                      <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                        c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                        c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                        C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                        c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                        s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                        c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                        "></path>
+                    </svg>
+                  </div>
+                </div>
+                <!-- single item -->
+                <div class="marquee__item one-line item-regular text">
+                  <p class="marquee__text">eCommerce</p>
+                  <div class="marquee__image">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="currentColor">
+                      <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                        c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                        c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                        C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                        c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                        s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                        c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                        "></path>
+                    </svg>
+                  </div>
+                </div>
+                <!-- single item -->
+                <div class="marquee__item one-line item-regular text">
+                  <p class="marquee__text">Mobile Apps</p>
+                  <div class="marquee__image">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="currentColor">
+                      <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                        c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                        c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                        C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                        c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                        s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                        c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                        "></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Block - Marquee Text One Line End -->
+
+        </div>
+      </div>
+      <!-- Section - Marquee Text One Line End -->
+
+      <!-- Section - Services Cards Start -->
+      <div class="mxd-section overflow-hidden padding-pre-title">
+        <div class="mxd-container grid-container">
+
+          <!-- Block - Services Cards #02 Start -->
+          <div class="mxd-block">
+            <div class="mxd-services-cards-s">
+              <div class="container-fluid px-0">
+                <div class="row gx-0">
+                  <!-- item -->
+                  <div class="col-12 col-xl-8 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in-right">
+                    <div class="mxd-services-cards-s__inner justify-between bg-base-tint radius-l padding-4">
+                      <div class="mxd-services-cards-s__title">
+                        <p class="anim-uni-in-up">AI-powered<br>solutions</p>
+                      </div>
+                      <div class="mxd-services-cards-s__info width-50">
+                        <div class="mxd-services-cards-s__tags">
+                          <span class="tag tag-default tag-outline anim-uni-in-up">UI/UX</span>
+                          <span class="tag tag-default tag-outline anim-uni-in-up">Web design</span>
+                          <span class="tag tag-default tag-outline anim-uni-in-up">Packaging</span>
+                          <span class="tag tag-default tag-outline anim-uni-in-up">Motion</span>
+                          <span class="tag tag-default tag-outline anim-uni-in-up">3D models</span>
+                        </div>
+                        <p class="anim-uni-in-up">Intelligent automation, predictive analytics, and machine learning-driven applications.</p>
+                      </div>
+                      <div class="mxd-services-cards-s__image image-right">
+                        <img src="images/1200x1200_service-image-01.webp" alt="Illustration">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item -->
+                  <div class="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in-left">
+                    <div class="mxd-services-cards-s__inner justify-end bg-accent radius-l padding-4">
+                      <div class="mxd-services-cards-s__title">
+                        <p class="opposite anim-uni-in-up">Fintech</p>
+                      </div>
+                      <div class="mxd-services-cards-s__info">
+                        <div class="mxd-services-cards-s__tags">
+                          <span class="tag tag-default tag-outline-opposite anim-uni-in-up">Frontend</span>
+                          <span class="tag tag-default tag-outline-opposite anim-uni-in-up">Interactions</span>
+                          <span class="tag tag-default tag-outline-opposite anim-uni-in-up">Backend</span>
+                        </div>
+                        <p class="t-opposite anim-uni-in-up">Innovative financial solutions, from digital banking to payment 
+                          processing and investment platforms.</p>
+                      </div>
+                      <div class="mxd-services-cards-s__image image-top-right">
+                        <img class="mxd-move" src="images/1200x1200_service-image-02.webp" alt="Illustration">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item -->
+                  <div class="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in-right">
+                    <div class="mxd-services-cards-s__inner bg-additional radius-l padding-4">
+                      <div class="mxd-services-cards-s__title">
+                        <p class="anim-uni-in-up">Blockchain</p>
+                      </div>
+                      <div class="mxd-services-cards-s__info">
+                        <div class="mxd-services-cards-s__tags">
+                          <span class="tag tag-default tag-outline anim-uni-in-up">Strategy</span>
+                          <span class="tag tag-default tag-outline anim-uni-in-up">Social media</span>
+                          <span class="tag tag-default tag-outline anim-uni-in-up">SEO</span>
+                        </div>
+                        <p class="t-bright anim-uni-in-up">Secure and transparent decentralized applications, including smart contracts 
+                          and cryptocurrencies.</p>
+                      </div>
+                      <div class="mxd-services-cards-s__image image-bottom">
+                        <img class="mxd-rotate-slow" src="images/1200x1200_service-image-03.webp" alt="Illustration">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item -->
+                  <div class="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in">
+                    <div class="mxd-services-cards-s__inner bg-base-opp radius-l padding-4">
+                      <div class="mxd-services-cards-s__title">
+                        <p class="opposite anim-uni-in-up">Cybersecurity</p>
+                      </div>
+                      <div class="mxd-services-cards-s__info">
+                        <div class="mxd-services-cards-s__tags">
+                          <span class="tag tag-default tag-outline-opposite anim-uni-in-up">Brand strategy</span>
+                          <span class="tag tag-default tag-outline-opposite anim-uni-in-up">Logo design</span>
+                          <span class="tag tag-default tag-outline-opposite anim-uni-in-up">Guidelines</span>
+                        </div>
+                        <p class="t-opposite anim-uni-in-up">Advanced threat detection, encryption solutions, 
+                          and secure data protection.</p>
+                      </div>
+                      <div class="mxd-services-cards-s__image image-bottom image-bottom-2">
+                        <img src="images/1200x1200_service-image-04.webp" alt="Illustration">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item -->
+                  <div class="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in-left">
+                    <div class="mxd-services-cards-s__inner justify-end bg-base-tint radius-l padding-4">
+                      <div class="mxd-services-cards-s__title">
+                        <p class="anim-uni-in-up">Gaming</p>
+                      </div>
+                      <div class="mxd-services-cards-s__info">
+                        <div class="mxd-services-cards-s__tags">
+                          <span class="tag tag-default tag-outline anim-uni-in-up">E-Commerce</span>
+                          <span class="tag tag-default tag-outline anim-uni-in-up">Maintenance</span>
+                          <span class="tag tag-default tag-outline anim-uni-in-up">Support</span>
+                        </div>
+                        <p class="anim-uni-in-up">Immersive experiences, multiplayer platforms, and game engine development.</p>
+                      </div>
+                      <div class="mxd-services-cards-s__image image-top">
+                        <img src="images/1200x1200_service-image-05.webp" alt="Illustration">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Block - Services Cards #02 End -->
+
+        </div>
+      </div>
+      <!-- Section - Services Cards End -->
+
+      <!-- Section - About Start -->
+      <div class="mxd-section padding-default">
+        <div class="mxd-container grid-container">
+        
+          <!-- Block - About Description with H2 Title and Paragraph Start -->
+          <div class="mxd-block">
+            <div class="container-fluid px-0">
+              <div class="row gx-0">
+                <div class="col-12 col-xl-5 mxd-grid-item no-margin">
+                  <div class="mxd-block__name">
+                    <h2 class="reveal-type anim-uni-in-up">About Me</h2>
+                  </div>
+                </div>
+                <div class="col-12 col-xl-6 mxd-grid-item no-margin">
+                  <div class="mxd-block__content">
+                    <div class="mxd-block__paragraph">
+                      <p class="t-large t-bright anim-uni-in-up">My name is Ajay J. I'm a curious and passionate DevOps and Backend Developer. 
+                        I strive to build robust, scalable, and efficient systems that are both functional and user-friendly. 
+                        I enjoy tackling challenging projects that push me to grow and gain deeper real-world experience.</p>
+                      <div class="mxd-paragraph__lists">
+                        <div class="container-fluid p-0">
+                          <div class="row g-0">
+                            <div class="col-6 col-xl-5">
+                              <ul>
+                                <li>
+                                  <p class="anim-uni-in-up">AWS & Cloud</p>
+                                </li>
+                                <li>
+                                  <p class="anim-uni-in-up">Docker & K8s</p>
+                                </li>
+                                <li>
+                                  <p class="anim-uni-in-up">CI/CD</p>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-6 col-xl-5">
+                              <ul>
+                                <li>
+                                  <p class="anim-uni-in-up">Node.js</p>
+                                </li>
+                                <li>
+                                  <p class="anim-uni-in-up">Python</p>
+                                </li>
+                                <li>
+                                  <p class="anim-uni-in-up">Terraform</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mxd-paragraph__controls anim-uni-in-up">
+                        <a class="btn btn-anim btn-default btn-outline slide-right-up" href="about-us.html">
+                          <span class="btn-caption">Let's Meet Closer</span>
+                          <i class="ph-bold ph-arrow-up-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Block - About Description with H2 Title and Paragraph End -->
+
+        </div>
+      </div>
+      <!-- Section - About End -->
+
+      <!-- Section - Parallax Divider Start -->
+      <div class="mxd-section padding-pre-title">
+        <div class="mxd-container">
+          <div class="mxd-divider">
+            <div class="mxd-divider__image divider-image-5 parallax-img"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Section - Parallax Divider End -->
+
+      <!-- Section - Our Capabilities List Large Start -->
+      <div class="mxd-section overflow-hidden padding-grid-pre-pinned">
+        <div class="mxd-container grid-container">
+
+          <!-- Block - Section Title Start -->
+          <div class="mxd-block">
+            <div class="mxd-section-title">
+              <div class="container-fluid p-0">
+                <div class="row g-0">
+                  <div class="col-12 col-xl-6 mxd-grid-item no-margin">
+                    <div class="mxd-section-title__hrtitle">
+                      <h2 class="reveal-type">Our capabilities</h2>
+                    </div>
+                  </div>
+                  <div class="col-12 col-xl-3 mxd-grid-item no-margin">
+                    <!-- <div class="mxd-section-title__hrdescr">
+                      <p class="anim-uni-in-up">Design</p>
+                      <p class="anim-uni-in-up">Development</p>
+                      <p class="anim-uni-in-up">Mastership</p>
+                    </div> -->
+                  </div>
+                  <div class="col-12 col-xl-3 mxd-grid-item no-margin">
+                    <div class="mxd-section-title__hrcontrols anim-uni-in-up">
+                      <a class="btn btn-anim btn-default btn-outline slide-right-up" href="services.html">
+                        <span class="btn-caption">All Services</span>
+                        <i class="ph-bold ph-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Block - Section Title End -->
+
+          <!-- Block - Our Capabilities List Start -->
+          <div class="mxd-block">
+            <div class="container-fluid p-0">
+              <div class="row g-0">
+                <div class="col-12 mxd-grid-item no-margin">
+                  <div class="mxd-cpb-list">
+                    <!-- item -->
+                    <div class="mxd-cpb-list__item hover-reveal__item">
+                      <div class="mxd-cpb-list__divider anim-uni-in-up"></div>
+                      <div class="hover-reveal__content hover-reveal-280x340">
+                        <img class="hover-reveal__image" src="images/600x730_cpb-01.webp" alt="Project Preview">
+                      </div>
+                      <div class="mxd-cpb-list__content anim-uni-in-up">
+                        <p class="mxd-cpb-list__title">Software development</p>
+                        <div class="mxd-cpb-list__num">
+                          <span>/ 01</span>
+                        </div>
+                      </div>
+                      <div class="mxd-cpb-list__image anim-uni-in-up">
+                        <img src="images/1200x800_cpb-01.webp" alt="Project Preview">
+                      </div>
+                      <div class="mxd-cpb-list__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- item -->
+                    <div class="mxd-cpb-list__item hover-reveal__item">
+                      <div class="mxd-cpb-list__divider anim-uni-in-up"></div>
+                      <div class="hover-reveal__content hover-reveal-280x340">
+                        <img class="hover-reveal__image" src="images/600x730_cpb-03.webp" alt="Project Preview">
+                      </div>
+                      <div class="mxd-cpb-list__content anim-uni-in-up">
+                        <p class="mxd-cpb-list__title">Web app development</p>
+                        <div class="mxd-cpb-list__num">
+                          <span>/ 02</span>
+                        </div>
+                      </div>
+                      <div class="mxd-cpb-list__image anim-uni-in-up">
+                        <img src="images/1200x800_cpb-03.webp" alt="Project Preview">
+                      </div>
+                      <div class="mxd-cpb-list__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- item -->
+                    <div class="mxd-cpb-list__item hover-reveal__item">
+                      <div class="mxd-cpb-list__divider anim-uni-in-up"></div>
+                      <div class="hover-reveal__content hover-reveal-280x340">
+                        <img class="hover-reveal__image" src="images/600x730_cpb-02.webp" alt="Project Preview">
+                      </div>
+                      <div class="mxd-cpb-list__content anim-uni-in-up">
+                        <p class="mxd-cpb-list__title">Mobile app development</p>
+                        <div class="mxd-cpb-list__num">
+                          <span>/ 03</span>
+                        </div>
+                      </div>
+                      <div class="mxd-cpb-list__image anim-uni-in-up">
+                        <img src="images/1200x800_cpb-02.webp" alt="Project Preview">
+                      </div>
+                      <div class="mxd-cpb-list__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- item -->
+                    <div class="mxd-cpb-list__item hover-reveal__item">
+                      <div class="mxd-cpb-list__divider anim-uni-in-up"></div>
+                      <div class="hover-reveal__content hover-reveal-280x340">
+                        <img class="hover-reveal__image" src="images/600x730_cpb-04.webp" alt="Project Preview">
+                      </div>
+                      <div class="mxd-cpb-list__content anim-uni-in-up">
+                        <p class="mxd-cpb-list__title">UI/UX design</p>
+                        <div class="mxd-cpb-list__num">
+                          <span>/ 04</span>
+                        </div>
+                      </div>
+                      <div class="mxd-cpb-list__image anim-uni-in-up">
+                        <img src="images/1200x800_cpb-04.webp" alt="Project Preview">
+                      </div>
+                      <div class="mxd-cpb-list__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- item -->
+                    <div class="mxd-cpb-list__item hover-reveal__item">
+                      <div class="mxd-cpb-list__divider anim-uni-in-up"></div>
+                      <div class="hover-reveal__content hover-reveal-280x340">
+                        <img class="hover-reveal__image" src="images/600x730_cpb-05.webp" alt="Project Preview">
+                      </div>
+                      <div class="mxd-cpb-list__content anim-uni-in-up">
+                        <p class="mxd-cpb-list__title">Software testing</p>
+                        <div class="mxd-cpb-list__num">
+                          <span>/ 05</span>
+                        </div>
+                      </div>
+                      <div class="mxd-cpb-list__image anim-uni-in-up">
+                        <img src="images/1200x800_cpb-05.webp" alt="Project Preview">
+                      </div>
+                      <div class="mxd-cpb-list__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- item -->
+                    <div class="mxd-cpb-list__item hover-reveal__item">
+                      <div class="mxd-cpb-list__divider anim-uni-in-up"></div>
+                      <div class="hover-reveal__content hover-reveal-280x340">
+                        <img class="hover-reveal__image" src="images/600x730_cpb-06.webp" alt="Project Preview">
+                      </div>
+                      <div class="mxd-cpb-list__content anim-uni-in-up">
+                        <p class="mxd-cpb-list__title">Generative AI development</p>
+                        <div class="mxd-cpb-list__num">
+                          <span>/ 06</span>
+                        </div>
+                      </div>
+                      <div class="mxd-cpb-list__image anim-uni-in-up">
+                        <img src="images/1200x800_cpb-06.webp" alt="Project Preview">
+                      </div>
+                      <div class="mxd-cpb-list__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- item -->
+                    <div class="mxd-cpb-list__item hover-reveal__item">
+                      <div class="mxd-cpb-list__divider anim-uni-in-up"></div>
+                      <div class="hover-reveal__content hover-reveal-280x340">
+                        <img class="hover-reveal__image" src="images/600x730_cpb-07.webp" alt="Project Preview">
+                      </div>
+                      <div class="mxd-cpb-list__content anim-uni-in-up">
+                        <p class="mxd-cpb-list__title">Data engineering</p>
+                        <div class="mxd-cpb-list__num">
+                          <span>/ 07</span>
+                        </div>
+                      </div>
+                      <div class="mxd-cpb-list__image anim-uni-in-up">
+                        <img src="images/1200x800_cpb-07.webp" alt="Project Preview">
+                      </div>
+                      <div class="mxd-cpb-list__divider anim-uni-in-up"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Block - Our Capabilities List Start -->
+
+        </div>
+      </div>
+      <!-- Section - Our Capabilities List Large End -->
+
+      <!-- Section - Projects Pinned #02 Start -->
+      <div class="mxd-section padding-pre-grid mobile-grid-title">
+        <div class="mxd-container grid-container">
+
+          <!-- Block - Projects Pinned #01 with Section Title Start -->
+          <div class="mxd-block">
+            <div class="mxd-pinned-projects">
+              <div class="container-fluid px-0">
+                <div class="row gx-0">
+                  <div class="col-12 col-xl-5 mxd-pinned-projects__static">
+                    <div class="mxd-pinned-projects__static-inner no-margin">
+    
+                      <!-- Section Title Start -->
+                      <div class="mxd-section-title no-margin-desktop">
+                        <div class="container-fluid p-0">
+                          <div class="row g-0">
+                            <div class="col-12 mxd-grid-item no-margin">
+                              <div class="mxd-section-title__title">
+                                <h2 class="reveal-type">Case studies</h2>
+                              </div>
+                            </div>
+                            <div class="col-12 mxd-grid-item no-margin">
+                              <div class="mxd-section-title__descr">
+                                <p class="anim-uni-in-up">Explore a selection of my projects</p>
+                              </div>
+                            </div>
+                            <div class="col-12 mxd-grid-item no-margin">
+                              <div class="mxd-section-title__controls anim-uni-in-up">
+                                <a class="btn btn-anim btn-default btn-outline slide-right-up" href="works-simple.html">
+                                  <span class="btn-caption">All Works</span>
+                                  <i class="ph-bold ph-arrow-up-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Section Title Start -->
+    
+                    </div>
+                  </div>
+                  <div class="col-12 col-xl-7 mxd-pinned-projects__scroll">
+                    <div class="mxd-pinned-projects__scroll-inner mxd-grid-item no-margin">
+                      <!-- item -->
+                      <div class="mxd-project-item">
+                        <a class="mxd-project-item__media anim-uni-in-up" href="#">
+                          <div class="mxd-project-item__preview parallax-img-small" style="background-image: url('images/alora.png'); background-size: cover; background-position: center;"></div>
+                          <div class="mxd-project-item__tags">
+                            <span class="tag tag-default tag-permanent">Twilio</span>
+                            <span class="tag tag-default tag-permanent">OpenAI</span>
+                            <span class="tag tag-default tag-permanent">RAG</span>
+                          </div>
+                        </a>
+                        <div class="mxd-project-item__promo">
+                          <div class="mxd-project-item__name">
+                            <a class="anim-uni-in-up" href="#"><span>ChatBot</span> — AI, Live Agent & WhatsApp BSP. Multi-channel solution with Facebook/WhatsApp, MongoDB, Python Flask backend.</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- item -->
+                      <div class="mxd-project-item">
+                        <a class="mxd-project-item__media anim-uni-in-up" href="#">
+                          <div class="mxd-project-item__preview parallax-img-small" style="background-image: url('images/eomm.png'); background-size: cover; background-position: center;"></div>
+                          <div class="mxd-project-item__tags">
+                            <span class="tag tag-default tag-permanent">Node.js</span>
+                            <span class="tag tag-default tag-permanent">MongoDB</span>
+                            <span class="tag tag-default tag-permanent">Angular</span>
+                          </div>
+                        </a>
+                        <div class="mxd-project-item__promo">
+                          <div class="mxd-project-item__name">
+                            <a class="anim-uni-in-up" href="#"><span>Ecommerce Website</span> — Full-featured platform with Angular frontend, Node.js/MongoDB backend, RESTful APIs, WhatsApp integration.</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- item -->
+                      <div class="mxd-project-item">
+                        <a class="mxd-project-item__media" href="#">
+                          <div class="mxd-project-item__preview parallax-img-small" style="background-image: url('images/hot.PNG'); background-size: cover; background-position: center;"></div>
+                          <div class="mxd-project-item__tags">
+                            <span class="tag tag-default tag-permanent">PHP</span>
+                            <span class="tag tag-default tag-permanent">MySQL</span>
+                            <span class="tag tag-default tag-permanent">Bootstrap</span>
+                          </div>
+                        </a>
+                        <div class="mxd-project-item__promo">
+                          <div class="mxd-project-item__name">
+                            <a href="#"><span>Hotel Booking Website</span> — PHP/MySQL backend, Bootstrap/HTML/JS frontend for reservation management.</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Block - Projects Pinned #01 with Section Title Start -->
+
+        </div>
+      </div>
+      <!-- Section - Projects Pinned #02 End -->
+
+      <!-- Section - Tech Stack Start -->
+      <div class="mxd-section padding-grid-pre-mtext">
+        <div class="mxd-container grid-container">
+        
+          <!-- Block - Tech Stack Cards with H2 Title Start -->
+          <div class="mxd-block">
+            <div class="container-fluid px-0">
+              <div class="row gx-0">
+                <div class="col-12 col-xl-5 mxd-grid-item">
+                  
+                  <!-- Section Title Start -->
+                  <div class="mxd-section-title pre-grid no-margin-desktop">
+                    <div class="container-fluid p-0">
+                      <div class="row g-0">
+                        <div class="col-12">
+                          <div class="mxd-section-title__title">
+                            <h2 class="reveal-type">Our tech<br>stack:</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Section Title End -->
+                  
+                </div>
+                <div class="col-12 col-xl-7">
+
+                  <!-- Tech Stack Cards Start -->
+                  <div class="mxd-tech-stack-cards">
+                    <div class="container-fluid p-0">
+                      <div class="row g-0">
+                        <!-- item -->
+                        <div class="col-12 col-md-6 col-xxl-4 mxd-tech-stack-cards__item mxd-grid-item animate-card-3">
+                          <div class="mxd-tech-stack-cards__inner">
+                            <div class="mxd-tech-stack-cards__logo">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="256" height="272" version="1.1" viewBox="0 0 256 272">
+                                <path d="M103,143.6l23.3-55.4,26.5,55.4h-49.8ZM255.1,44.7l-20.9,166.4-108.3,60-106.6-59.2L0,45.5,125.9.7l129.2,44ZM208.2,207.2L126.1,32.3,47.7,206.7l29.3-.5,15.7-39.3h70.3l17.2,39.8,28,.5Z"></path>
+                              </svg>
+                              <!-- <img class="inject-me" src="img/tech/01_angular.svg" alt="Tech Stack Logo"> -->
+                            </div>
+                            <div class="mxd-tech-stack-cards__title">
+                              <p class="t-bright t-caption">Angular</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col-12 col-md-6 col-xxl-4 mxd-tech-stack-cards__item mxd-grid-item animate-card-3">
+                          <div class="mxd-tech-stack-cards__inner">
+                            <div class="mxd-tech-stack-cards__logo">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="225.8" height="201.2" version="1.1" viewBox="0 0 225.8 201.2">
+                                <path d="M185.7,65.2c-2.3-.8-4.8-1.6-7.3-2.3.4-1.7.8-3.3,1.1-5,5.5-26.7,1.9-48.3-10.4-55.3-11.8-6.8-31.1.3-50.5,17.2-1.9,1.6-3.7,3.4-5.6,5.2-1.3-1.2-2.5-2.4-3.7-3.5C88.9,3.4,68.4-4.3,56.2,2.9c-11.8,6.8-15.3,27.1-10.3,52.4.5,2.4,1,4.9,1.7,7.5-2.9.8-5.7,1.7-8.4,2.6C15.3,73.7,0,86.8,0,100.4s16.4,28,41.3,36.6c2,.7,4,1.3,6.1,1.9-.7,2.7-1.3,5.4-1.8,8.1-4.7,24.9-1,44.7,10.7,51.4,12.1,7,32.5-.2,52.3-17.5,1.6-1.4,3.1-2.8,4.7-4.3,2,2,4.1,3.8,6.1,5.6,19.2,16.5,38.2,23.2,49.9,16.4,12.1-7,16.1-28.2,10.9-54.1-.4-2-.8-4-1.4-6,1.4-.4,2.8-.9,4.2-1.3,25.9-8.6,42.8-22.5,42.8-36.6s-15.8-26.8-40.2-35.2h0v-.2h.1ZM180.1,127.8c-1.2.4-2.5.8-3.8,1.2-2.9-9.1-6.7-18.7-11.4-28.6,4.5-9.7,8.2-19.2,11-28.2,2.3.7,4.6,1.4,6.7,2.1,20.9,7.2,33.7,17.8,33.7,26s-13.8,20.1-36.1,27.5c0,0-.1,0-.1,0ZM170.8,146.2c2.3,11.4,2.6,21.7,1.1,29.8-1.3,7.3-4.1,12.1-7.4,14-7.1,4.1-22.3-1.2-38.8-15.4-1.9-1.6-3.8-3.3-5.7-5.2,6.4-7,12.7-15.1,18.9-24,10.9-1,21.2-2.6,30.6-4.7.5,1.9.9,3.7,1.2,5.5h0ZM77,189.4c-7,2.5-12.5,2.5-15.8.6-7.1-4.1-10.1-20-6-41.3.5-2.4,1-4.9,1.6-7.5,9.3,2,19.5,3.5,30.5,4.4,6.3,8.8,12.8,16.9,19.4,24-1.4,1.4-2.9,2.7-4.3,4-8.8,7.7-17.6,13.1-25.3,15.8h-.1ZM44.4,127.8c-11-3.8-20.1-8.7-26.4-14-5.6-4.8-8.4-9.6-8.4-13.4,0-8.2,12.3-18.7,32.7-25.9,2.5-.9,5.1-1.7,7.8-2.4,2.8,9.2,6.5,18.8,11,28.5-4.5,9.9-8.3,19.6-11.2,28.9-1.9-.6-3.8-1.1-5.6-1.7h0ZM55.3,53.4c-4.2-21.7-1.4-38.1,5.7-42.2,7.6-4.4,24.3,1.9,41.9,17.5,1.1,1,2.3,2,3.4,3.1-6.6,7-13.1,15.1-19.2,23.8-10.6,1-20.8,2.6-30.2,4.7-.6-2.4-1.1-4.7-1.6-7h0ZM152.8,77.5c-2.2-3.9-4.5-7.6-6.9-11.3,7.2.9,14.1,2.1,20.6,3.6-1.9,6.2-4.4,12.8-7.2,19.5-2-3.9-4.2-7.8-6.5-11.8h0ZM113,38.8c4.5,4.8,8.9,10.2,13.3,16.1-4.4-.2-8.9-.3-13.4-.3s-8.9,0-13.3.3c4.4-5.8,8.9-11.2,13.4-16h0ZM73,77.5c-2.2,3.9-4.4,7.8-6.4,11.7-2.8-6.7-5.2-13.2-7.2-19.6,6.4-1.4,13.3-2.6,20.5-3.5-2.4,3.7-4.7,7.5-6.9,11.4h0ZM80.2,135.2c-7.4-.8-14.4-1.9-20.8-3.3,2-6.4,4.5-13.1,7.3-19.9,2,3.9,4.2,7.8,6.4,11.7h0c2.3,4,4.7,7.8,7.1,11.6h0ZM113.3,162.6c-4.6-4.9-9.1-10.4-13.6-16.3,4.3.2,8.7.3,13.2.3s9.2-.1,13.6-.3c-4.4,6-8.8,11.4-13.3,16.3h.1ZM159.4,111.6c3,6.9,5.6,13.5,7.6,19.9-6.6,1.5-13.6,2.7-21.1,3.6,2.3-3.7,4.7-7.6,6.9-11.5,2.3-4,4.5-8,6.6-12h0ZM144.5,118.7c-3.5,6.1-7.2,12-10.8,17.5-6.7.5-13.6.7-20.7.7s-13.9-.2-20.5-.6c-3.8-5.6-7.5-11.5-11-17.5h0c-3.5-6-6.7-12.1-9.6-18.2,2.9-6.1,6.1-12.2,9.6-18.2h0c3.5-6,7.2-11.9,11-17.4,6.7-.5,13.6-.8,20.6-.8h0c7,0,13.9.3,20.6.8,3.7,5.5,7.4,11.3,10.9,17.4s6.8,12.2,9.7,18.1c-2.9,6-6.2,12.2-9.7,18.3h-.1,0ZM164.4,10.9c7.6,4.4,10.5,22,5.8,45-.3,1.5-.6,3-1,4.5-9.4-2.2-19.6-3.8-30.2-4.8-6.2-8.8-12.6-16.9-19.1-23.8,1.7-1.7,3.5-3.3,5.2-4.8,16.7-14.5,32.3-20.2,39.4-16.2h-.1ZM112.9,80.2c11.1,0,20.2,9,20.2,20.2s-9,20.2-20.2,20.2-20.2-9-20.2-20.2,9-20.2,20.2-20.2"></path>
+                              </svg>
+                              <!-- <img class="inject-me" src="img/tech/02_react.svg" alt="Tech Stack Logo"> -->
+                            </div>
+                            <div class="mxd-tech-stack-cards__title">
+                              <p class="t-bright t-caption">React</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col-12 col-md-6 col-xxl-4 mxd-tech-stack-cards__item mxd-grid-item animate-card-3">
+                          <div class="mxd-tech-stack-cards__inner">
+                            <div class="mxd-tech-stack-cards__logo">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="512" height="416.2" version="1.1" viewBox="0 0 512 416.2">
+                                <path d="M256,96.1L200.5,0h-79.4l134.9,233.7L390.9,0h-79.4l-55.5,96.1ZM409.4,0l-153.4,265.7L102.6,0H15.7l240.3,416.2L496.3,0h-86.9Z"></path>
+                              </svg>
+                              <!-- <img class="inject-me" src="img/tech/03_vue.svg" alt="Tech Stack Logo"> -->
+                            </div>
+                            <div class="mxd-tech-stack-cards__title">
+                              <p class="t-bright t-caption">Vue.js</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col-12 col-md-6 col-xxl-4 mxd-tech-stack-cards__item mxd-grid-item animate-card-3">
+                          <div class="mxd-tech-stack-cards__inner">
+                            <div class="mxd-tech-stack-cards__logo">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1309" version="1.1" viewBox="0 0 2500 1309">
+                                <path d="M839,547.9c-8.6,145.6-77.1,171.2-154.1,179.8h-102.7l42.8-256.9h111.3c59.9,0,102.7,25.7,102.7,77.1ZM1883.6,470.9h-111.3l-42.8,256.9h102.8c77.1-8.6,145.5-34.2,154.1-179.8,0-51.4-42.8-77.1-102.7-77.1h0ZM2500,650.7c0,359.4-559.6,650.7-1250,650.7S0,1010,0,650.7,559.6,0,1250,0s1250,291.3,1250,650.7ZM1010.3,539.4c0-119.9-68.5-188.4-205.5-196.9h-316.8l-137,693.5h162.7l34.2-179.8h154.1c145.6,8.6,308.2-111.3,308.2-316.8h0ZM1398,539.4l-59.9,316.8h171.2l59.9-351c17.1-85.6-34.2-154.1-171.2-162.7h-154.1l34.2-179.8h-162.7l-137,693.5h162.7l77.1-385.3h128.4c59.9,0,59.9,25.7,51.4,68.5ZM2157.5,539.4c0-119.9-68.5-188.4-205.5-196.9h-316.8l-137,693.5h162.7l34.2-179.8h154.1c145.5,8.6,308.2-111.3,308.2-316.8h.1Z"></path>
+                              </svg>
+                              <!-- <img class="inject-me" src="img/tech/04_php.svg" alt="Tech Stack Logo"> -->
+                            </div>
+                            <div class="mxd-tech-stack-cards__title">
+                              <p class="t-bright t-caption">PHP</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col-12 col-md-6 col-xxl-4 mxd-tech-stack-cards__item mxd-grid-item animate-card-3">
+                          <div class="mxd-tech-stack-cards__inner">
+                            <div class="mxd-tech-stack-cards__logo">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="256" height="288" version="1.1" viewBox="0 0 256 288">
+                                <path d="M255.6,84.5c0-4.8-1-9.1-3.1-12.8-2.1-3.6-5.1-6.6-9.2-9-34-19.6-68.1-39.2-102.1-58.8-9.2-5.3-18.1-5.1-27.2.3C100.5,12.2,32.7,51,12.4,62.7c-8.3,4.8-12.4,12.2-12.4,21.7v118.4c0,4.7,1,8.9,3,12.5,2.1,3.7,5.2,6.8,9.4,9.3,20.2,11.7,88,50.5,101.6,58.5,9.1,5.4,18,5.6,27.2.3,34-19.6,68.1-39.2,102.1-58.8,4.2-2.4,7.3-5.5,9.4-9.3,2-3.6,3-7.8,3-12.5v-118.3h0ZM129.5,238.6h-1.1c-35.3,0-66-19.2-82.4-47.7-8-13.9-12.6-30.1-12.6-47.3,0-52.5,42.5-95,95-95s65.6,19,82.1,47.2h0l.2.3s-.1-.2-.2-.3l-41.3,23.8c-8.1-13.8-23.1-23.1-40.2-23.3h-.5c-26.1,0-47.3,21.2-47.3,47.3s2.3,16.6,6.2,23.5c8.2,14.2,23.5,23.8,41.1,23.8s33.1-9.7,41.2-24.1l-.2.3,41.3,23.9c-16.3,28.1-46.5,47.2-81.3,47.5h0ZM235.6,136.5h-13.5v13.5h13.5v6.7h-13.5v13.5h-6.7v-13.5h-13.5v13.5h-6.7v-13.5h-13.5v-6.7h13.5v-13.5h-13.5v-6.7h13.5v-13.5h6.7v13.5h13.5v-13.5h6.7v13.5h13.5v6.7ZM201.9,136.5h13.5v13.5h-13.5v-13.5Z"></path>
+                              </svg>
+                              <!-- <img class="inject-me" src="img/tech/05_c-sharp.svg" alt="Tech Stack Logo"> -->
+                            </div>
+                            <div class="mxd-tech-stack-cards__title">
+                              <p class="t-bright t-caption">C#</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col-12 col-md-6 col-xxl-4 mxd-tech-stack-cards__item mxd-grid-item animate-card-3">
+                          <div class="mxd-tech-stack-cards__inner">
+                            <div class="mxd-tech-stack-cards__logo">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" version="1.1" viewBox="0 0 256 256">
+                                <path d="M0,0v256h256V0H0ZM139.3,199.7c0,24.9-14.6,36.3-35.9,36.3s-30.4-10-36.1-22h0l19.6-11.9c3.8,6.7,7.2,12.4,15.5,12.4s12.9-3.1,12.9-15.1v-81.8h24.1v82.1h-.1ZM196.2,235.9c-22.3,0-36.8-10.7-43.8-24.6h0l19.6-11.3c5.2,8.4,11.9,14.6,23.7,14.6s16.3-5,16.3-11.9-6.5-11.2-17.5-16l-6-2.6c-17.4-7.4-28.9-16.7-28.9-36.3s13.7-31.8,35.2-31.8,26.3,5.3,34.2,19.2l-18.7,12c-4.1-7.4-8.6-10.3-15.5-10.3s-11.5,4.5-11.5,10.3,4.5,10.1,14.8,14.6l6,2.6c20.4,8.8,32,17.7,32,37.8s-17,33.5-39.9,33.5v.2Z"></path>
+                              </svg>
+                              <!-- <img class="inject-me" src="img/tech/06_javascript.svg" alt="Tech Stack Logo"> -->
+                            </div>
+                            <div class="mxd-tech-stack-cards__title">
+                              <p class="t-bright t-caption">JS</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col-12 col-md-6 col-xxl-4 mxd-tech-stack-cards__item mxd-grid-item animate-card-3">
+                          <div class="mxd-tech-stack-cards__inner">
+                            <div class="mxd-tech-stack-cards__logo">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="351.8" height="198.8" version="1.1" viewBox="0 0 351.8 198.8">
+                                <path d="M256.9,148.5c-8.1,0-14.7-6.6-14.7-14.7s6.6-14.7,14.7-14.7,14.7,6.6,14.7,14.7h0c0,8.1-6.6,14.7-14.7,14.7M94.9,148.5c-8.1,0-14.7-6.6-14.7-14.7s6.6-14.7,14.7-14.7,14.7,6.6,14.7,14.7h0c0,8.1-6.6,14.7-14.7,14.7M262.1,60.4l29.3-51c1.2-3.3-.5-7-3.8-8.2-2.1-.8-4.5-.4-6.3,1.1-.2.3-.4.6-.5,1l-29.6,51.6c-47.9-21.5-102.7-21.5-150.7,0L70.9,3.6c-2.3-2.6-6.3-2.9-9-.6-1.6,1.4-2.4,3.6-2.1,5.7,0,.4.3.7.6,1l29.2,51C38.3,88.6,4.6,140.6,0,198.8h351.8c-4.6-58.3-38.3-110.4-89.7-138.4"></path>
+                              </svg>
+                              <!-- <img class="inject-me" src="img/tech/07_android.svg" alt="Tech Stack Logo"> -->
+                            </div>
+                            <div class="mxd-tech-stack-cards__title">
+                              <p class="t-bright t-caption">Android</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col-12 col-md-6 col-xxl-4 mxd-tech-stack-cards__item mxd-grid-item animate-card-3">
+                          <div class="mxd-tech-stack-cards__inner">
+                            <div class="mxd-tech-stack-cards__logo">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="257" height="128" version="1.1" viewBox="0 0 257 128">
+                                <path d="M1.9,125h21.2V34.9H1.9v90.1ZM12.4,23c6.6,0,11.8-5.1,11.8-11.5S19,0,12.4,0,.7,5.1.7,11.6s5.2,11.5,11.7,11.5h0ZM93.5.3C57.7.3,35.3,24.7,35.3,63.7s22.4,63.3,58.2,63.3,58.2-24.3,58.2-63.3S129.2.3,93.5.3ZM93.5,19c21.8,0,35.8,17.3,35.8,44.7s-13.9,44.6-35.8,44.6-35.8-17.3-35.8-44.6,13.9-44.7,35.8-44.7ZM160.6,90.5c.9,22.6,19.5,36.6,47.7,36.6s48.4-14.6,48.4-37.9-10.5-28.6-35.5-34.3l-14.1-3.2c-15-3.6-21.3-8.3-21.3-16.5s9.4-17,23.2-17,23.6,6.9,24.7,18.4h20.9C254.1,14.9,236.3.3,209.2.3s-45.7,14.7-45.7,36.5,10.7,28.4,33.3,33.6l15.9,3.7c15.5,3.7,21.8,8.8,21.8,17.6s-10.3,17.5-25.1,17.5-26.3-7.4-27.6-18.7h-21.3.1Z"></path>
+                              </svg>
+                              <!-- <img class="inject-me" src="img/tech/08_ios.svg" alt="Tech Stack Logo"> -->
+                            </div>
+                            <div class="mxd-tech-stack-cards__title">
+                              <p class="t-bright t-caption">iOS</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col-12 col-md-6 col-xxl-4 mxd-tech-stack-cards__item mxd-grid-item animate-card-3">
+                          <div class="mxd-tech-stack-cards__inner">
+                            <div class="mxd-tech-stack-cards__logo">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="212.6" height="79.4" version="1.1" viewBox="0 0 212.6 79.4">
+                                <path d="M116.2,69.8h32.3v8.2h-41.4V0h39.6v8.2h-30.4v26h28.2v8.2h-28.2v27.3h0ZM157.1,8.2h22.5v69.8h9.1V8.2h22.5V0h-54.1v8.2ZM7.4,67.1c-1.7,0-3.1.6-4.3,1.8-1.2,1.2-1.8,2.7-1.8,4.4s.6,3.1,1.8,4.4c1.2,1.2,2.6,1.8,4.3,1.8s3.2-.6,4.4-1.8c1.2-1.2,1.8-2.7,1.8-4.4s-.6-3.1-1.8-4.4c-1.2-1.2-2.7-1.8-4.4-1.8ZM80.7,66L38.8,0h-11.9v78.1h9.1V11.1l42.6,67h11.1V0h-9.1v66h0Z"></path>
+                              </svg>
+                              <!-- <img class="inject-me" src="img/tech/09_net.svg" alt="Tech Stack Logo"> -->
+                            </div>
+                            <div class="mxd-tech-stack-cards__title">
+                              <p class="t-bright t-caption">.NET</p>
+                            </div>
+                          </div>
+                        </div>
+          
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Tech Stack Cards End -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Block - Tech Stack Cards with H2 Title End -->
+
+        </div>
+      </div>
+      <!-- Section - Tech Stack End -->
+
+      <!-- Section - Marquee Text One Line Start -->
+      <div class="mxd-section padding-mtext-pre-grid">
+        <div class="mxd-container fullwidth-container">
+
+          <!-- Block - Marquee Text One Line Start -->
+          <div class="mxd-block">
+            <div class="marquee marquee-right--gsap muted-extra">
+              <div class="marquee__toright">
+                <!-- single item -->
+                <div class="marquee__item one-line item-regular text">
+                  <p class="marquee__text">Understanding Your Industry</p>
+                  <div class="marquee__image">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="currentColor">
+                      <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                        c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                        c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                        C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                        c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                        s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                        c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                        "></path>
+                    </svg>
+                  </div>
+                </div>
+                <!-- single item -->
+                <div class="marquee__item one-line item-regular text">
+                  <p class="marquee__text">Understanding Your Industry</p>
+                  <div class="marquee__image">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="currentColor">
+                      <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                        c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                        c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                        C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                        c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                        s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                        c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                        "></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Block - Marquee Text One Line End -->
+
+        </div>
+      </div>
+      <!-- Section - Marquee Text One Line End -->
+
+      <!-- Section - Statistics Simple Start -->
+      <div class="mxd-section padding-default">
+        <div class="mxd-container grid-container">
+
+          <!-- Block - Statistics Cards Start -->
+          <div class="mxd-block">
+            <div class="mxd-stats-simple">
+              <div class="container-fluid p-0">
+                <div class="row g-0 mxd-stats-simple">
+                  <!-- item -->
+                  <div class="col-12 col-lg-3 mxd-stats-simple__item mxd-grid-item">
+                    <div class="mxd-stats-simple__inner animate-card-4">
+                      <!-- counter -->
+                      <div class="mxd-counter">
+                        <p id="stats-counter-1" class="mxd-stats-number mxd-stats-simple__counter">0</p>
+                      </div>
+                      <!-- image -->
+                      <img class="mxd-stats-simple__image" src="images/h70_stats-01.webp" alt="Icon">
+                      <!-- description -->
+                      <p class="mxd-stats-simple__descr t-140 t-bright">Happy clients who<br>trust my work</p>
+                    </div>
+                  </div>
+                  <!-- item -->
+                  <div class="col-12 col-lg-3 mxd-stats-simple__item mxd-grid-item">
+                    <div class="mxd-stats-simple__inner animate-card-4">
+                      <!-- counter -->
+                      <div class="mxd-counter">
+                        <p id="stats-counter-2" class="mxd-stats-number mxd-stats-simple__counter">0</p>
+                      </div>
+                      <!-- image -->
+                      <img class="mxd-stats-simple__image" src="images/h70_stats-02.webp" alt="Icon">
+                      <!-- description -->
+                      <p class="mxd-stats-simple__descr t-140 t-bright">Clients come back for<br>a new projects</p>
+                    </div>
+                  </div>
+                  <!-- item -->
+                  <div class="col-12 col-lg-3 mxd-stats-simple__item mxd-grid-item">
+                    <div class="mxd-stats-simple__inner animate-card-4">
+                      <!-- counter -->
+                      <div class="mxd-counter">
+                        <p id="stats-counter-3" class="mxd-stats-number mxd-stats-simple__counter">0</p>
+                      </div>
+                      <!-- image -->
+                      <img class="mxd-stats-simple__image" src="images/h70_stats-03.webp" alt="Icon">
+                      <!-- description -->
+                      <p class="mxd-stats-simple__descr t-140 t-bright">Years of professional<br>experience</p>
+                    </div>
+                  </div>
+                  <!-- item -->
+                  <div class="col-12 col-lg-3 mxd-stats-simple__item mxd-grid-item">
+                    <div class="mxd-stats-simple__inner animate-card-4">
+                      <!-- counter -->
+                      <div class="mxd-counter">
+                        <p id="stats-counter-4" class="mxd-stats-number mxd-stats-simple__counter">0</p>
+                      </div>
+                      <!-- image -->
+                      <img class="mxd-stats-simple__image" src="images/h70_stats-04.webp" alt="Icon">
+                      <!-- description -->
+                      <p class="mxd-stats-simple__descr t-140 t-bright">Successfully<br>completed projects</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Block - Statistics Cards End -->
+
+        </div>
+      </div>
+      <!-- Section - Statistics Simple End -->
+
+      <!-- Section - Parallax Divider Start -->
+      <div class="mxd-section padding-pre-title">
+        <div class="mxd-container">
+          <div class="mxd-divider">
+            <div class="mxd-divider__image divider-image-3 parallax-img"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Section - Parallax Divider End -->
+
+      <!-- Section - Blog Preview Start -->
+      <div class="mxd-section padding-blog">
+        <div class="mxd-container grid-container">
+
+          <!-- Block - Section Title Start -->
+          <div class="mxd-block">
+            <div class="mxd-section-title pre-grid">
+              <div class="container-fluid p-0">
+                <div class="row g-0">
+                  <div class="col-12 col-xl-5 mxd-grid-item no-margin">
+                    <div class="mxd-section-title__hrtitle">
+                      <h2 class="reveal-type anim-uni-in-up">Recent insights</h2>
+                    </div>
+                  </div>
+                  <div class="col-12 col-xl-4 mxd-grid-item no-margin">
+                    <div class="mxd-section-title__hrdescr">
+                      <p class="anim-uni-in-up">Inspiring ideas, creative insights, and the latest 
+                        in design and tech. Fueling innovation for your digital journey.</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-xl-3 mxd-grid-item no-margin">
+                    <div class="mxd-section-title__hrcontrols anim-uni-in-up">
+                      <a class="btn btn-anim btn-default btn-outline slide-right-up" href="blog-standard.html">
+                        <span class="btn-caption">All Articles</span>
+                        <i class="ph-bold ph-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Block - Section Title End -->
+
+          <!-- Block - Blog Preview Cards Start -->
+          <div class="mxd-block">
+            <div class="mxd-blog-preview">
+              <div class="container-fluid p-0">
+                <div class="row g-0">
+                  <!-- item -->
+                  <div class="col-12 col-xl-4 mxd-blog-preview__item mxd-grid-item animate-card-3">
+                    <a class="mxd-blog-preview__media" href="blog-article.html">
+                      <div class="mxd-blog-preview__image blog-preview-image-1 parallax-img-small">
+                        <!-- <img class="parallax-img-small" src="img/blog/preview/1000x1250_prv-01.webp" alt="Blog Preview Image"> -->
+                      </div>
+                      <div class="mxd-preview-hover">
+                        <i class="mxd-preview-hover__icon">
+                          <img src="images/icon-eye.svg" alt="Eye Icon">
+                        </i>
+                      </div>
+                      <div class="mxd-blog-preview__tags">
+                        <span class="tag tag-default tag-permanent">Concept</span>
+                        <span class="tag tag-default tag-permanent">Editorial</span>
+                      </div>
+                    </a>
+                    <div class="mxd-blog-preview__data">
+                      <a class="anim-uni-in-up" href="blog-article.html"><span>Frontend innovations</span> and user journeys</a>
+                    </div>
+                  </div>
+                  <!-- item -->
+                  <div class="col-12 col-xl-4 mxd-blog-preview__item mxd-grid-item animate-card-3">
+                    <a class="mxd-blog-preview__media" href="blog-article.html">
+                      <div class="mxd-blog-preview__image blog-preview-image-2 parallax-img-small">
+                        <!-- <img class="parallax-img-small" src="img/blog/preview/1000x1250_prv-02.webp" alt="Blog Preview Image"> -->
+                      </div>
+                      <div class="mxd-preview-hover">
+                        <i class="mxd-preview-hover__icon">
+                          <img src="images/icon-eye.svg" alt="Eye Icon">
+                        </i>
+                      </div>
+                      <div class="mxd-blog-preview__tags">
+                        <span class="tag tag-default tag-permanent">UI/UX</span>
+                        <span class="tag tag-default tag-permanent">Development</span>
+                      </div>
+                    </a>
+                    <div class="mxd-blog-preview__data">
+                      <a class="anim-uni-in-up" href="blog-article.html">Branding in creating <span>digital experiences</span></a>
+                    </div>
+                  </div>
+                  <!-- item -->
+                  <div class="col-12 col-xl-4 mxd-blog-preview__item mxd-grid-item animate-card-3">
+                    <a class="mxd-blog-preview__media" href="blog-article.html">
+                      <div class="mxd-blog-preview__image blog-preview-image-3 parallax-img-small">
+                        <!-- <img class="parallax-img-small" src="img/blog/preview/1000x1250_prv-03.webp" alt="Blog Preview Image"> -->
+                      </div>
+                      <div class="mxd-preview-hover">
+                        <i class="mxd-preview-hover__icon">
+                          <img src="images/icon-eye.svg" alt="Eye Icon">
+                        </i>
+                      </div>
+                      <div class="mxd-blog-preview__tags">
+                        <span class="tag tag-default tag-permanent">News</span>
+                        <span class="tag tag-default tag-permanent">AI</span>
+                      </div>
+                    </a>
+                    <div class="mxd-blog-preview__data">
+                      <a class="anim-uni-in-up" href="blog-article.html">Elevating <span>digital workshops</span> with engaging design</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Block - Blog Preview Cards End -->
+
+        </div>
+      </div>
+      <!-- Section - Blog Preview End -->
+
+      <!-- Section - CTA Start -->
+      <div class="mxd-section overflow-hidden">
+        <div class="mxd-container">
+
+          <!-- Block - CTA Start -->
+          <div class="mxd-block">
+            <div class="mxd-promo">
+              <div class="mxd-promo__inner anim-zoom-out-container">
+                <!-- background -->
+                <div class="mxd-promo__bg"></div>
+                <!-- caption -->
+                <div class="mxd-promo__content">
+                  <p class="mxd-promo__title anim-uni-in-up">
+                    <span class="mxd-promo__icon">
+                      <img src="images/300x300_obj-cta-01.webp" alt="Icon">
+                    </span>
+                    <span class="mxd-promo__caption reveal-type">Let's connect! Questions, work opportunities, or just saying hi — I'd love to hear from you.</span>
+                  </p>
+                  <div class="mxd-promo__controls anim-uni-in-up">
+                    <a class="btn btn-anim btn-default btn-large btn-additional slide-right-up" href="mailto:ajayj11jul1999@gmail.com?subject=Portfolio%20Inquiry">
+                      <span class="btn-caption">Contact Me</span>
+                      <i class="ph-bold ph-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- parallax images -->
+                <div class="mxd-promo__images">
+                  <img class="promo-image promo-image-1" src="images/cta-img-01.webp" alt="Image">
+                  <img class="promo-image promo-image-2" src="images/cta-img-02.webp" alt="Image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Block - CTA End -->
+
+        </div>
+      </div>
+      <!-- Section - CTA End -->
+
+    </main>
+    <!-- Page Content End -->
+
+    <!-- Footer Start -->
+    <footer id="mxd-footer" class="mxd-footer">
+
+      <!-- Footer Block - Fullwidth Text Start -->
+      <div class="mxd-footer__text-wrap">
+        <div class="fullwidth-text__tl-trigger"></div>
+        <div class="mxd-footer__fullwidth-text anim-top-to-bottom">
+          <svg class="mxd-footer__svg-v2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400.26 72" style="enable-background:new 0 0 400.26 72;" xml:space="preserve">
+          <path d="M4.93,56V25.93H0V16h10.13v7.73h2.8c1.11-2.67,2.82-4.69,5.13-6.07c2.31-1.38,4.96-2.07,7.93-2.07h3.33v8.53h-3.8
+            c-3.65,0-6.36,1.04-8.13,3.13c-1.78,2.09-2.67,4.87-2.67,8.33V56H4.93z M46.53,56.73c-4.67,0-8.32-1.13-10.97-3.4
+            c-2.65-2.27-3.97-5.27-3.97-9c0-3.91,1.34-6.93,4.03-9.07c2.69-2.13,6.57-3.2,11.63-3.2h12.2v-1.6c0-4.89-2.84-7.33-8.53-7.33
+            c-4.84,0-7.76,1.73-8.73,5.2h-9.93c0.84-4.27,2.87-7.52,6.07-9.77c3.2-2.24,7.4-3.37,12.6-3.37c5.87,0,10.33,1.32,13.4,3.97
+            c3.07,2.64,4.6,6.5,4.6,11.57v15.33h4.73V56h-10.2v-6.4h-2.8c-1.38,2.27-3.23,4.02-5.57,5.27C52.77,56.11,49.91,56.73,46.53,56.73z
+            M48,49.07c2.18,0,4.13-0.41,5.87-1.23c1.73-0.82,3.1-1.93,4.1-3.33s1.5-2.97,1.5-4.7v-0.93H47.8c-4.49,0-6.73,1.67-6.73,5
+            c0,1.65,0.61,2.92,1.83,3.83C44.12,48.61,45.82,49.07,48,49.07z M78.93,72v-7.93H88l3.4-8.27L73.93,16H84.4l12,28.33h0.33L108.33,16
+            h10.07l-17.13,40l-3.47,8.27c-1.07,2.44-2.23,4.34-3.5,5.7C93.03,71.32,91.02,72,88.27,72H78.93z M140.8,56.8
+            c-4.31,0-8.06-0.86-11.23-2.57c-3.18-1.71-5.64-4.12-7.4-7.23c-1.76-3.11-2.63-6.78-2.63-11c0-4.27,0.88-7.96,2.63-11.07
+            c1.76-3.11,4.23-5.51,7.43-7.2c3.2-1.69,6.93-2.53,11.2-2.53c4.36,0,8.1,0.84,11.23,2.53c3.13,1.69,5.57,4.09,7.3,7.2
+            c1.73,3.11,2.6,6.8,2.6,11.07c0,4.22-0.87,7.9-2.6,11.03c-1.73,3.13-4.18,5.54-7.33,7.23C148.84,55.96,145.11,56.8,140.8,56.8z
+            M140.8,48.13c3.55,0,6.31-1.08,8.27-3.23c1.96-2.16,2.93-5.12,2.93-8.9c0-3.82-0.98-6.8-2.93-8.93c-1.96-2.13-4.71-3.2-8.27-3.2
+            c-3.6,0-6.39,1.07-8.37,3.2c-1.98,2.13-2.97,5.09-2.97,8.87c0,3.82,0.99,6.81,2.97,8.97C134.41,47.06,137.2,48.13,140.8,48.13z
+            M185.6,56.8c-5.78,0-10.33-1.21-13.67-3.63c-3.33-2.42-5.13-5.81-5.4-10.17h9.67c0.31,2.09,1.27,3.63,2.87,4.63
+            c1.6,1,3.91,1.5,6.93,1.5c5.11,0,7.67-1.47,7.67-4.4c0-1.24-0.39-2.2-1.17-2.87c-0.78-0.67-2.08-1.18-3.9-1.53l-8.87-1.67
+            c-7.78-1.51-11.67-5.2-11.67-11.07c0-3.78,1.49-6.79,4.47-9.03c2.98-2.24,7.07-3.37,12.27-3.37c5.29,0,9.48,1.14,12.57,3.43
+            s4.81,5.52,5.17,9.7h-9.6c-0.49-2-1.41-3.46-2.77-4.37c-1.36-0.91-3.3-1.37-5.83-1.37c-2.27,0-4,0.36-5.2,1.07
+            c-1.2,0.71-1.8,1.76-1.8,3.13c0,1.02,0.38,1.84,1.13,2.47c0.75,0.62,1.96,1.09,3.6,1.4l9,1.73c4.09,0.8,7.09,2.13,9,4
+            c1.91,1.87,2.87,4.38,2.87,7.53c0,4.04-1.49,7.2-4.47,9.47C195.49,55.67,191.2,56.8,185.6,56.8z M221.06,56c-2.62,0-4.66-0.67-6.1-2
+            c-1.45-1.33-2.17-3.36-2.17-6.07v-24.2h-7.07V16h7.13V4h9.73v12h9.67v7.73h-9.53V48.2h10.47V56H221.06z M255.86,56.73
+            c-5.47,0-9.68-1.46-12.63-4.37c-2.96-2.91-4.43-6.85-4.43-11.83V16h9.93v22.53c0,3.11,0.8,5.46,2.4,7.03
+            c1.6,1.58,3.98,2.37,7.13,2.37c3.33,0,5.89-0.84,7.67-2.53c1.78-1.69,2.67-4.07,2.67-7.13V16h9.93v30.07h5V56h-10.2v-6.4h-2.8
+            c-1.56,2.31-3.5,4.08-5.83,5.3C262.36,56.12,259.42,56.73,255.86,56.73z M307,56.8c-4.09,0-7.56-0.86-10.4-2.57
+            c-2.84-1.71-5.01-4.13-6.5-7.27c-1.49-3.13-2.23-6.79-2.23-10.97c0-4.22,0.72-7.89,2.17-11c1.44-3.11,3.53-5.52,6.27-7.23
+            c2.73-1.71,6.01-2.57,9.83-2.57c3.02,0,5.62,0.57,7.8,1.7c2.18,1.13,3.84,2.77,5,4.9h0.27V0h9.93v46.07h4.93V56h-10.13v-6.4h-2.8
+            c-1.42,2.31-3.31,4.09-5.67,5.33C313.11,56.18,310.28,56.8,307,56.8z M308.73,48.2c3.2,0,5.74-0.9,7.63-2.7
+            c1.89-1.8,2.83-4.23,2.83-7.3v-4.4c0-3.07-0.94-5.5-2.83-7.3c-1.89-1.8-4.43-2.7-7.63-2.7c-3.56,0-6.27,1.08-8.13,3.23
+            c-1.87,2.16-2.8,5.14-2.8,8.97c0,3.82,0.93,6.81,2.8,8.97C302.46,47.12,305.17,48.2,308.73,48.2z M345.86,11.6
+            c-1.56,0-2.88-0.54-3.97-1.63c-1.09-1.09-1.63-2.41-1.63-3.97c0-1.56,0.54-2.88,1.63-3.97c1.09-1.09,2.41-1.63,3.97-1.63
+            c1.55,0,2.88,0.54,3.97,1.63c1.09,1.09,1.63,2.41,1.63,3.97c0,1.56-0.54,2.88-1.63,3.97C348.74,11.06,347.42,11.6,345.86,11.6z
+            M340.93,56V16h9.93v40H340.93z M379.13,56.8c-4.31,0-8.06-0.86-11.23-2.57c-3.18-1.71-5.64-4.12-7.4-7.23
+            c-1.76-3.11-2.63-6.78-2.63-11c0-4.27,0.88-7.96,2.63-11.07c1.76-3.11,4.23-5.51,7.43-7.2c3.2-1.69,6.93-2.53,11.2-2.53
+            c4.36,0,8.1,0.84,11.23,2.53c3.13,1.69,5.57,4.09,7.3,7.2c1.73,3.11,2.6,6.8,2.6,11.07c0,4.22-0.87,7.9-2.6,11.03
+            c-1.73,3.13-4.18,5.54-7.33,7.23C387.17,55.96,383.44,56.8,379.13,56.8z M379.13,48.13c3.55,0,6.31-1.08,8.27-3.23
+            c1.96-2.16,2.93-5.12,2.93-8.9c0-3.82-0.98-6.8-2.93-8.93c-1.96-2.13-4.71-3.2-8.27-3.2c-3.6,0-6.39,1.07-8.37,3.2
+            c-1.98,2.13-2.97,5.09-2.97,8.87c0,3.82,0.99,6.81,2.97,8.97C372.74,47.06,375.53,48.13,379.13,48.13z"></path>
+          </svg>
+        </div>
+      </div>
+      <!-- Footer Block - Fullwidth Text End -->
+
+      <!-- Footer Block - Info Columns Start -->
+      <div class="mxd-footer__footer-blocks">
+        <!-- single column -->
+        <div class="footer-blocks__column animate-card-3">
+          <!-- inner card -->
+          <div class="footer-blocks__card fullheight-card">
+            <!-- footer navigation -->
+            <div class="footer-blocks__nav">
+              <ul class="footer-nav">
+                <li class="footer-nav__item anim-uni-in-up">
+                  <a href="index-main.html" class="footer-nav__link btn-anim">
+                    <span class="btn-caption">Home</span>
+                  </a>
+                </li>
+                <li class="footer-nav__item anim-uni-in-up">
+                  <a href="about-us.html" class="footer-nav__link btn-anim">
+                    <span class="btn-caption">About us</span>
+                  </a>
+                </li>
+                <li class="footer-nav__item anim-uni-in-up">
+                  <a href="works-simple.html" class="footer-nav__link btn-anim">
+                    <span class="btn-caption">Works</span>
+                  </a>
+                  <p class="footer-nav__counter">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill="currentColor" d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2
+                        c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4
+                        c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2
+                        c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6
+                        c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4
+                        c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6
+                        c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"></path>
+                    </svg>
+                    <span>10</span>
+                  </p>
+                </li>
+                <li class="footer-nav__item anim-uni-in-up">
+                  <a href="services.html" class="footer-nav__link btn-anim">
+                    <span class="btn-caption">Services</span>
+                  </a>
+                </li>
+                <li class="footer-nav__item anim-uni-in-up">
+                  <a href="blog-standard.html" class="footer-nav__link btn-anim">
+                    <span class="btn-caption">Insights</span>
+                  </a>
+                </li>
+                <li class="footer-nav__item anim-uni-in-up">
+                  <a href="contact.html" class="footer-nav__link btn-anim">
+                    <span class="btn-caption">Contact</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- links -->
+            <div class="footer-blocks__links anim-uni-in-up">
+              <a class="btn btn-line-xsmall btn-muted slide-right anim-no-delay" href="#0">
+                <span class="btn-caption">Privacy Policy</span>
+                <i class="ph ph-arrow-right"></i>
+              </a>
+              <a class="btn btn-line-xsmall btn-muted slide-right anim-no-delay" href="#0">
+                <span class="btn-caption">Terms & conditions</span>
+                <i class="ph ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- single column -->
+        <div class="footer-blocks__column animate-card-3">
+          <!-- inner card -->
+          <div class="footer-blocks__card">
+            <p class="mxd-point-subtitle anim-uni-in-up">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" fill="currentColor">
+                <path fill="currentColor" d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2
+                  c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4
+                  c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2
+                  c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6
+                  c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4
+                  c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6
+                  c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"></path>
+              </svg>
+              <a href="mailto:ajayj11jul1999@gmail.com?subject=Portfolio%20Inquiry">ajayj11jul1999@gmail.com</a>
+            </p>
+          </div>
+          <!-- inner card -->
+          <div class="footer-blocks__card">
+            <p class="mxd-point-subtitle anim-uni-in-up">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" fill="currentColor">
+                <path fill="currentColor" d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2
+                  c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4
+                  c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2
+                  c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6
+                  c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4
+                  c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6
+                  c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"></path>
+              </svg>
+              <a href="tel:+918682868554">+91 868 2 868 554</a>
+            </p>
+          </div>
+          <!-- inner card -->
+          <div class="footer-blocks__card fill-card notify">
+            <!-- card title -->
+            <div class="footer-blocks__title anim-uni-in-up">
+              <p class="footer-blocks__title-m">Subscribe to our insights:</p>
+            </div>
+            <!-- subscribe form container -->
+            <div class="form-container anim-uni-in-up">
+              <!-- reply messages -->
+              <div class="form__reply subscription-ok">
+                <span class="reply__text">Done! Thanks for subscribing.</span>
+              </div>
+              <div class="form__reply subscription-error">
+                <span class="reply__text">Ooops! Something went wrong. Please try again later.</span>
+              </div>
+              <!-- subscribe form -->
+              <form class="form notify-form form-light">
+                <input type="email" placeholder="Your Email" required="">
+                <button class="btn btn-form btn-absolute-right btn-muted slide-right-up anim-no-delay" type="submit" aria-label="Submit">
+                  <i class="ph ph-arrow-up-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- single column -->
+        <div class="footer-blocks__column animate-card-3">
+          <!-- inner card -->
+          <div class="footer-blocks__card fullheight-card">
+            <!-- nav block -->
+            <div class="footer-blocks__block">
+              <!-- card title -->
+              <div class="footer-blocks__title anim-uni-in-up">
+                <p class="footer-blocks__title-l">Connect</p>
+              </div>
+              <!-- footer socials -->
+              <div class="footer-blocks__socials">
+                <ul class="footer-socials">
+                  <li class="footer-socials__item anim-uni-in-up"><a href="https://www.linkedin.com/in/j-ajay/" class="footer-socials__link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                  <li class="footer-socials__item anim-uni-in-up"><a href="https://github.com/ajayjgit" class="footer-socials__link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- links -->
+            <div class="footer-blocks__links anim-uni-in-up">
+              <p class="t-xsmall t-muted">
+                <a class="no-effect" href="https://1.envato.market/EKA9WD" target="_blank">Mix_Design</a>
+                <i class="ph-bold ph-copyright"></i>
+                2025
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Block - Info Columns End -->
+
+    </footer>
+    <!-- Footer End -->
+
+    <!-- To Top Button Start -->
+    <a href="#0" id="to-top" class="btn btn-round btn-to-top slide-up anim-no-delay">
+      <i class="ph ph-arrow-up"></i>
+    </a>
+    <!-- To Top Button End -->
+
+    <!-- Load Scripts Start -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/app.min.js"></script>
+    <!-- counters -->
+    <script>
+      const statsCounter1 = new countUp.CountUp("stats-counter-1", 50, optionsPlus);
+      const statsCounter2 = new countUp.CountUp("stats-counter-2", 80, optionsPercent);
+      const statsCounter3 = new countUp.CountUp("stats-counter-3", 5, optionsPlus);
+      const statsCounter4 = new countUp.CountUp("stats-counter-4", 70, optionsPlus);
+      statsCounter1.start();
+      statsCounter2.start();
+      statsCounter3.start();
+      statsCounter4.start();
+    </script>
+    
+  
+
+</body></html>
