@@ -587,7 +587,7 @@
   position: relative;
   aspect-ratio: 16/12;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 30px;
   cursor: pointer;
 }
 
