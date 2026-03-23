@@ -248,10 +248,19 @@
   opacity: 0;
 }
 
-/* Scrolling project frames – each ends with a line */
+/* Featured Work - full screen breakout */
+.work-section__projects {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  max-width: none;
+}
+
+/* Scrolling project frames – each full viewport height */
 .project-frame {
   position: relative;
   height: 100vh;
+  height: 100dvh;
   width: 100%;
   overflow: clip;
   margin-bottom: 0;
