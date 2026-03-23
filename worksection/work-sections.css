@@ -186,7 +186,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 32rem;
+  max-width: 40rem;
   aspect-ratio: 16/12;
   z-index: 100;
   pointer-events: none;
@@ -199,11 +199,11 @@
 }
 
 @media (min-width: 768px) {
-  .project-center-preview { max-width: 42rem; }
+  .project-center-preview { max-width: 48rem; }
 }
 
 @media (min-width: 1024px) {
-  .project-center-preview { max-width: 36rem; }
+  .project-center-preview { max-width: 44rem; }
 }
 
 .project-center-preview__frame {
@@ -222,6 +222,17 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.project-center-preview__line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0;
 }
 
 /* Scrolling project frames – each ends with a line */

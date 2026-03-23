@@ -27,6 +27,7 @@
     const parallaxImages = section.querySelectorAll('.parallax-image');
     const centerPreview = document.getElementById('project-center-preview');
     const centerImages = centerPreview ? centerPreview.querySelectorAll('.project-center-preview__img') : [];
+    const centerLine = document.getElementById('project-center-line');
 
     // Background parallax (no pin – backgrounds scroll normally)
     projectFrames.forEach(function(frame, i) {
@@ -67,54 +68,56 @@
       if (!box) return;
       const boxRect = box.getBoundingClientRect();
       const boxTop = boxRect.top;
+      const boxBottom = boxRect.bottom;
       const boxHeight = boxRect.height;
 
       centerImages.forEach(function(img, i) {
-        let clipPath = 'inset(0 0 0 0)';
+        let clipPath = 'inset(100% 0 0 0)';
         let opacity = 0;
         const n = projectFrames.length;
+        const frame = projectFrames[i];
+        const frameTop = frame.getBoundingClientRect().top;
+        const frameBottom = frame.getBoundingClientRect().bottom;
 
         if (i === 0) {
-          const lineY = projectFrames[0].getBoundingClientRect().bottom;
-          const split = ((lineY - boxTop) / boxHeight) * 100;
-          if (split >= 100) {
-            opacity = 1;
-          } else if (split > 0) {
-            clipPath = 'inset(0 0 ' + (100 - split) + '% 0)';
-            opacity = 1;
-          }
+          if (frameBottom <= boxTop || frameTop >= boxBottom) { img.style.opacity = 0; return; }
+          let clipTop = frameTop > boxTop ? ((frameTop - boxTop) / boxHeight) * 100 : 0;
+          let clipBottom = frameBottom < boxBottom ? ((frameBottom - boxTop) / boxHeight) * 100 : 100;
+          clipPath = 'inset(' + clipTop + '% 0 ' + (100 - clipBottom) + '% 0)';
+          opacity = clipBottom > clipTop ? 1 : 0;
         } else if (i === n - 1) {
-          const lineY = projectFrames[n - 2].getBoundingClientRect().bottom;
-          const split = ((lineY - boxTop) / boxHeight) * 100;
-          if (split <= 0) {
-            opacity = 1;
-          } else if (split < 100) {
-            clipPath = 'inset(' + split + '% 0 0 0)';
-            opacity = 1;
-          }
+          const prevBottom = projectFrames[i - 1].getBoundingClientRect().bottom;
+          if (prevBottom >= boxBottom || frameBottom <= boxTop) { img.style.opacity = 0; return; }
+          let clipTop = prevBottom > boxTop ? ((prevBottom - boxTop) / boxHeight) * 100 : 0;
+          let clipBottom = frameBottom < boxBottom ? ((frameBottom - boxTop) / boxHeight) * 100 : 100;
+          clipPath = 'inset(' + clipTop + '% 0 ' + (100 - clipBottom) + '% 0)';
+          opacity = clipBottom > clipTop ? 1 : 0;
         } else {
-          const lineUp = projectFrames[i].getBoundingClientRect().bottom;
-          const lineLow = projectFrames[i - 1].getBoundingClientRect().bottom;
-          const splitUp = ((lineUp - boxTop) / boxHeight) * 100;
-          const splitLow = ((lineLow - boxTop) / boxHeight) * 100;
-          if (splitLow <= 0 && splitUp >= 100) {
-            opacity = 1;
-          } else if (splitUp > 0 && splitUp < 100) {
-            clipPath = 'inset(0 0 ' + (100 - splitUp) + '% 0)';
-            opacity = 1;
-          } else if (splitLow > 0 && splitLow < 100) {
-            clipPath = 'inset(' + splitLow + '% 0 0 0)';
-            opacity = 1;
-          }
+          const prevBottom = projectFrames[i - 1].getBoundingClientRect().bottom;
+          if (prevBottom >= boxBottom || frameBottom <= boxTop) { img.style.opacity = 0; return; }
+          let clipTop = prevBottom > boxTop ? ((prevBottom - boxTop) / boxHeight) * 100 : 0;
+          let clipBottom = frameBottom < boxBottom ? ((frameBottom - boxTop) / boxHeight) * 100 : 100;
+          clipPath = 'inset(' + clipTop + '% 0 ' + (100 - clipBottom) + '% 0)';
+          opacity = clipBottom > clipTop ? 1 : 0;
         }
 
         img.style.clipPath = clipPath;
         img.style.opacity = opacity;
       });
+
+      if (centerLine) {
+        let lineTop = -1;
+        for (let i = 0; i < projectFrames.length - 1; i++) {
+          const divY = projectFrames[i].getBoundingClientRect().bottom;
+          if (divY > boxTop && divY < boxBottom) { lineTop = ((divY - boxTop) / boxHeight) * 100; break; }
+        }
+        centerLine.style.top = (lineTop >= 0 ? lineTop : 0) + '%';
+        centerLine.style.opacity = (lineTop >= 0 && lineTop <= 100) ? '1' : '0';
+      }
     }
 
     ScrollTrigger.create({
-      trigger: featuredProjects || section,
+      trigger: section,
       start: 'top bottom',
       end: 'bottom top',
       onUpdate: updateCenterSplit
@@ -230,32 +233,57 @@
           return centerY >= r.top && centerY <= r.bottom;
         });
         centerPreview.classList.toggle('is-visible', isOverBackground);
+
         const box = centerPreview.querySelector('.project-center-preview__frame');
         if (!box) return;
-        const boxTop = box.getBoundingClientRect().top;
-        const boxHeight = box.getBoundingClientRect().height;
+        const boxRect = box.getBoundingClientRect();
+        const boxTop = boxRect.top;
+        const boxBottom = boxRect.bottom;
+        const boxHeight = boxRect.height;
         const n = frames.length;
+        const centerLine = document.getElementById('project-center-line');
+
         centerImages.forEach(function(img, i) {
-          let clipPath = 'inset(0 0 0 0)';
+          let clipPath = 'inset(100% 0 0 0)';
           let opacity = 0;
+          const frame = frames[i];
+          const frameTop = frame.getBoundingClientRect().top;
+          const frameBottom = frame.getBoundingClientRect().bottom;
+
           if (i === 0) {
-            const split = ((frames[0].getBoundingClientRect().bottom - boxTop) / boxHeight) * 100;
-            if (split >= 100) opacity = 1;
-            else if (split > 0) { clipPath = 'inset(0 0 ' + (100 - split) + '% 0)'; opacity = 1; }
+            if (frameBottom <= boxTop || frameTop >= boxBottom) { img.style.opacity = 0; return; }
+            let clipTop = frameTop > boxTop ? ((frameTop - boxTop) / boxHeight) * 100 : 0;
+            let clipBottom = frameBottom < boxBottom ? ((frameBottom - boxTop) / boxHeight) * 100 : 100;
+            clipPath = 'inset(' + clipTop + '% 0 ' + (100 - clipBottom) + '% 0)';
+            opacity = clipBottom > clipTop ? 1 : 0;
           } else if (i === n - 1) {
-            const split = ((frames[n - 2].getBoundingClientRect().bottom - boxTop) / boxHeight) * 100;
-            if (split <= 0) opacity = 1;
-            else if (split < 100) { clipPath = 'inset(' + split + '% 0 0 0)'; opacity = 1; }
+            const prevBottom = frames[i - 1].getBoundingClientRect().bottom;
+            if (prevBottom >= boxBottom || frameBottom <= boxTop) { img.style.opacity = 0; return; }
+            let clipTop = prevBottom > boxTop ? ((prevBottom - boxTop) / boxHeight) * 100 : 0;
+            let clipBottom = frameBottom < boxBottom ? ((frameBottom - boxTop) / boxHeight) * 100 : 100;
+            clipPath = 'inset(' + clipTop + '% 0 ' + (100 - clipBottom) + '% 0)';
+            opacity = clipBottom > clipTop ? 1 : 0;
           } else {
-            const splitUp = ((frames[i].getBoundingClientRect().bottom - boxTop) / boxHeight) * 100;
-            const splitLow = ((frames[i - 1].getBoundingClientRect().bottom - boxTop) / boxHeight) * 100;
-            if (splitLow <= 0 && splitUp >= 100) opacity = 1;
-            else if (splitUp > 0 && splitUp < 100) { clipPath = 'inset(0 0 ' + (100 - splitUp) + '% 0)'; opacity = 1; }
-            else if (splitLow > 0 && splitLow < 100) { clipPath = 'inset(' + splitLow + '% 0 0 0)'; opacity = 1; }
+            const prevBottom = frames[i - 1].getBoundingClientRect().bottom;
+            if (prevBottom >= boxBottom || frameBottom <= boxTop) { img.style.opacity = 0; return; }
+            let clipTop = prevBottom > boxTop ? ((prevBottom - boxTop) / boxHeight) * 100 : 0;
+            let clipBottom = frameBottom < boxBottom ? ((frameBottom - boxTop) / boxHeight) * 100 : 100;
+            clipPath = 'inset(' + clipTop + '% 0 ' + (100 - clipBottom) + '% 0)';
+            opacity = clipBottom > clipTop ? 1 : 0;
           }
           img.style.clipPath = clipPath;
           img.style.opacity = opacity;
         });
+
+        if (centerLine) {
+          let lineTop = -1;
+          for (let i = 0; i < frames.length - 1; i++) {
+            const divY = frames[i].getBoundingClientRect().bottom;
+            if (divY > boxTop && divY < boxBottom) { lineTop = ((divY - boxTop) / boxHeight) * 100; break; }
+          }
+          centerLine.style.top = (lineTop >= 0 ? lineTop : 0) + '%';
+          centerLine.style.opacity = (lineTop >= 0 && lineTop <= 100) ? '1' : '0';
+        }
       }
       let ticking = false;
       window.addEventListener('scroll', function() {
