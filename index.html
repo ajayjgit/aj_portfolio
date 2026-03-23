@@ -33,6 +33,7 @@
     <link rel="stylesheet" type="text/css" href="css/loader.min.css">
     <link rel="stylesheet" type="text/css" href="css/plugins.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="worksection/work-sections.css">
     <!-- Template Styles End -->
 
     <!-- Custom divider image zoom -->
@@ -137,6 +138,9 @@
                         </svg>
                       </div>
                       <ul class="submenu">
+                        <li class="submenu__item">
+                          <a href="#work">Projects</a>
+                        </li>
                         <li class="submenu__item">
                           <a href="works-simple.html">Portfolio</a>
                         </li>
@@ -1174,194 +1178,232 @@
       </div>
       <!-- Section - Our Capabilities List Large End -->
 
-      <!-- Section - Projects Pinned #02 Start -->
-      <div class="mxd-section padding-pre-grid mobile-grid-title">
-        <div class="mxd-container grid-container">
+      <!-- Section - Projects (Work Section) Start -->
+      <section id="work" class="work-section work-section--cinematic-2">
+        <div class="work-section__content">
+          <!-- Header -->
+          <div class="work-section__header">
+            <div class="work-section__header-left">
+              <p class="work-section__tagline fill-text-y">Building scalable backends, cloud-native architectures, and DevOps solutions.</p>
+              <a href="works-simple.html" class="work-section__cta-btn">
+                <span class="work-section__cta-text"><span class="work-section__cta-hover">All Works</span><span class="work-section__cta-default">All Works</span></span>
+                <span class="work-section__cta-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </span>
+              </a>
+            </div>
+            <div class="work-section__header-right">
+              <h1 class="work-section__title fill-text">Featured</h1>
+              <div class="work-section__title-row">
+                <span class="work-section__count">01 — 03</span>
+                <h1 class="work-section__title fill-text">Projects</h1>
+              </div>
+            </div>
+          </div>
 
-          <!-- Block - Projects Pinned #01 with Section Title Start -->
-          <div class="mxd-block">
-            <div class="mxd-pinned-projects">
-              <div class="container-fluid px-0">
-                <div class="row gx-0">
-                  <div class="col-12 col-xl-5 mxd-pinned-projects__static">
-                    <div class="mxd-pinned-projects__static-inner no-margin">
-    
-                      <!-- Section Title Start -->
-                      <div class="mxd-section-title no-margin-desktop">
-                        <div class="container-fluid p-0">
-                          <div class="row g-0">
-                            <div class="col-12 mxd-grid-item no-margin">
-                              <div class="mxd-section-title__title">
-                                <h2 class="reveal-type">Projects</h2>
-                              </div>
-                            </div>
-                            <div class="col-12 mxd-grid-item no-margin">
-                              <div class="mxd-section-title__descr">
-                                <p class="anim-uni-in-up">Explore a selection of my projects</p>
-                              </div>
-                            </div>
-                            <div class="col-12 mxd-grid-item no-margin">
-                              <div class="mxd-section-title__controls anim-uni-in-up">
-                                <a class="btn btn-anim btn-default btn-outline slide-right-up" href="works-simple.html">
-                                  <span class="btn-caption">All Works</span>
-                                  <i class="ph-bold ph-arrow-up-right"></i>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Section Title Start -->
-    
+          <!-- Featured Work - Cinematic parallax frames -->
+          <div class="work-section__projects" id="featured-projects">
+            <div class="project-frame lightbox-trigger cinematic-frame">
+              <div class="project-frame__parallax-wrapper">
+                <div class="project-frame__image-container">
+                  <img src="images/eomm.png" alt="Sealed Delivery Partner Application" class="project-frame__image parallax-image" loading="lazy" />
+                </div>
+                <div class="project-frame__sticky">
+                  <div class="project-frame__grid-overlay cinematic-grid">
+                    <div class="project-frame__grid-v project-frame__grid-v--left"><span>+</span><span>+</span></div>
+                    <div class="project-frame__grid-v project-frame__grid-v--center"><span>+</span><span>+</span></div>
+                    <div class="project-frame__grid-v project-frame__grid-v--right"><span>+</span><span>+</span></div>
+                  </div>
+                  <div class="project-frame__overlay"></div>
+                  <div class="project-frame__content">
+                    <div class="project-frame__number-row">
+                      <span class="project-frame__number">01</span>
+                      <span class="project-frame__number">01</span>
+                    </div>
+                    <p class="project-frame__description max-lg:hidden">Microservices using NestJS & Node.js. MQTT-based real-time delivery tracking. MongoDB, Redis, JWT auth. Deployed on private AWS EKS.</p>
+                    <h2 class="project-frame__title">Sealed – Delivery Partner App</h2>
+                    <div class="project-frame__thumb">
+                      <img src="images/eomm.png" alt="Sealed" />
+                    </div>
+                    <div class="project-frame__tags">
+                      <span>NestJS</span>
+                      <span>Node.js</span>
+                      <span>MQTT</span>
+                      <span>MongoDB</span>
+                      <span>Redis</span>
                     </div>
                   </div>
-                  <div class="col-12 col-xl-7 mxd-pinned-projects__scroll">
-                    <div class="mxd-pinned-projects__scroll-inner mxd-grid-item no-margin">
-                      <!-- item -->
-                      <div class="mxd-project-item">
-                        <a class="mxd-project-item__media anim-uni-in-up" href="#">
-                          <div class="mxd-project-item__preview parallax-img-small" style="background-image: url('images/eomm.png'); background-size: cover; background-position: center;"></div>
-                          <div class="mxd-project-item__tags">
-                            <span class="tag tag-default tag-permanent">NestJS</span>
-                            <span class="tag tag-default tag-permanent">Node.js</span>
-                            <span class="tag tag-default tag-permanent">MQTT</span>
-                            <span class="tag tag-default tag-permanent">MongoDB</span>
-                            <span class="tag tag-default tag-permanent">Redis</span>
-                          </div>
-                        </a>
-                        <div class="mxd-project-item__promo">
-                          <div class="mxd-project-item__name">
-                            <a class="anim-uni-in-up" href="#"><span>Sealed – Delivery Partner Application</span> — Microservices using NestJS & Node.js. MQTT-based real-time delivery tracking. MongoDB, Redis caching, JWT authentication. Deployed on private AWS EKS. SugunaFintaxTech.</a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- item -->
-                      <div class="mxd-project-item">
-                        <a class="mxd-project-item__media anim-uni-in-up" href="#">
-                          <div class="mxd-project-item__preview parallax-img-small" style="background-image: url('images/alora.png'); background-size: cover; background-position: center;"></div>
-                          <div class="mxd-project-item__tags">
-                            <span class="tag tag-default tag-permanent">Terraform</span>
-                            <span class="tag tag-default tag-permanent">AWS EKS</span>
-                            <span class="tag tag-default tag-permanent">VPN</span>
-                            <span class="tag tag-default tag-permanent">CI/CD</span>
-                          </div>
-                        </a>
-                        <div class="mxd-project-item__promo">
-                          <div class="mxd-project-item__name">
-                            <a class="anim-uni-in-up" href="#"><span>GSTR Project – Secure VPN-Based Deployment</span> — Fully private AWS architecture with VPN-only access. Private EKS & RDS using modular Terraform. CI/CD pipelines with zero-downtime deployments. SugunaFintaxTech.</a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- item -->
-                      <div class="mxd-project-item">
-                        <a class="mxd-project-item__media anim-uni-in-up" href="#">
-                          <div class="mxd-project-item__preview parallax-img-small" style="background-image: url('images/hot.PNG'); background-size: cover; background-position: center;"></div>
-                          <div class="mxd-project-item__tags">
-                            <span class="tag tag-default tag-permanent">Node.js</span>
-                            <span class="tag tag-default tag-permanent">AWS EKS</span>
-                            <span class="tag tag-default tag-permanent">Prometheus</span>
-                            <span class="tag tag-default tag-permanent">Grafana</span>
-                          </div>
-                        </a>
-                        <div class="mxd-project-item__promo">
-                          <div class="mxd-project-item__name">
-                            <a class="anim-uni-in-up" href="#"><span>FastX – Food Ordering Platform</span> — Microservices architecture for admin, vendor, and customer modules. Deployed on AWS EKS with Prometheus & Grafana monitoring. ALO InfoTech.</a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- item -->
-                      <div class="mxd-project-item">
-                        <a class="mxd-project-item__media" href="#">
-                          <div class="mxd-project-item__preview parallax-img-small" style="background-image: url('images/alora.png'); background-size: cover; background-position: center;"></div>
-                          <div class="mxd-project-item__tags">
-                            <span class="tag tag-default tag-permanent">OpenAI</span>
-                            <span class="tag tag-default tag-permanent">RAG</span>
-                            <span class="tag tag-default tag-permanent">WhatsApp</span>
-                            <span class="tag tag-default tag-permanent">Twilio</span>
-                          </div>
-                        </a>
-                        <div class="mxd-project-item__promo">
-                          <div class="mxd-project-item__name">
-                            <a href="#"><span>AI Chatbot (AI + Live Agent + WhatsApp)</span> — OpenAI API with RAG-based architecture for context-aware responses. WhatsApp & Twilio live agent handoff within secure VPC. ALO InfoTech.</a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- item -->
-                      <div class="mxd-project-item">
-                        <a class="mxd-project-item__media" href="#">
-                          <div class="mxd-project-item__preview parallax-img-small" style="background-image: url('images/eomm.png'); background-size: cover; background-position: center;"></div>
-                          <div class="mxd-project-item__tags">
-                            <span class="tag tag-default tag-permanent">Node.js</span>
-                            <span class="tag tag-default tag-permanent">E-commerce</span>
-                            <span class="tag tag-default tag-permanent">Redis</span>
-                            <span class="tag tag-default tag-permanent">AWS</span>
-                          </div>
-                        </a>
-                        <div class="mxd-project-item__promo">
-                          <div class="mxd-project-item__name">
-                            <a href="#"><span>Yummysouth – E-commerce Platform</span> — Scalable backend for product catalog, cart, and order processing. Caching optimization. Deployed on AWS. ALO InfoTech.</a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- item -->
-                      <div class="mxd-project-item">
-                        <a class="mxd-project-item__media" href="#">
-                          <div class="mxd-project-item__preview parallax-img-small" style="background-image: url('images/hot.PNG'); background-size: cover; background-position: center;"></div>
-                          <div class="mxd-project-item__tags">
-                            <span class="tag tag-default tag-permanent">Node.js</span>
-                            <span class="tag tag-default tag-permanent">S3</span>
-                            <span class="tag tag-default tag-permanent">CloudFront</span>
-                          </div>
-                        </a>
-                        <div class="mxd-project-item__promo">
-                          <div class="mxd-project-item__name">
-                            <a href="#"><span>MyBuddy – Social Platform</span> — Backend for posts, comments, likes, follow system. AWS S3 & CloudFront for secure media storage and global delivery. ALO InfoTech.</a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- item -->
-                      <div class="mxd-project-item">
-                        <a class="mxd-project-item__media" href="#">
-                          <div class="mxd-project-item__preview parallax-img-small" style="background-image: url('images/alora.png'); background-size: cover; background-position: center;"></div>
-                          <div class="mxd-project-item__tags">
-                            <span class="tag tag-default tag-permanent">AWS DMS</span>
-                            <span class="tag tag-default tag-permanent">MySQL</span>
-                            <span class="tag tag-default tag-permanent">Oracle</span>
-                          </div>
-                        </a>
-                        <div class="mxd-project-item__promo">
-                          <div class="mxd-project-item__name">
-                            <a href="#"><span>OSTA – Database Migration System</span> — Migrated MySQL (RDS) to Oracle (RDS) using AWS DMS with minimal downtime. Automated S3 backup and secure replication. ALO InfoTech.</a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- item -->
-                      <div class="mxd-project-item">
-                        <a class="mxd-project-item__media" href="#">
-                          <div class="mxd-project-item__preview parallax-img-small" style="background-image: url('images/hot.PNG'); background-size: cover; background-position: center;"></div>
-                          <div class="mxd-project-item__tags">
-                            <span class="tag tag-default tag-permanent">Node.js</span>
-                            <span class="tag tag-default tag-permanent">AWS EC2</span>
-                            <span class="tag tag-default tag-permanent">MySQL</span>
-                          </div>
-                        </a>
-                        <div class="mxd-project-item__promo">
-                          <div class="mxd-project-item__name">
-                            <a href="#"><span>JCGoldandDiamonds – Dynamic E-commerce Website</span> — Admin panel, product/inventory management. REST APIs, JWT auth, payment gateway. AWS EC2, Nginx, PM2, RDS (MySQL), S3, HTTPS. JCITSO.</a>
-                          </div>
-                        </div>
-                      </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-frame lightbox-trigger cinematic-frame">
+              <div class="project-frame__parallax-wrapper">
+                <div class="project-frame__image-container">
+                  <img src="images/alora.png" alt="GSTR Project" class="project-frame__image parallax-image" loading="lazy" />
+                </div>
+                <div class="project-frame__sticky">
+                  <div class="project-frame__grid-overlay cinematic-grid">
+                    <div class="project-frame__grid-v project-frame__grid-v--left"><span>+</span><span>+</span></div>
+                    <div class="project-frame__grid-v project-frame__grid-v--center"><span>+</span><span>+</span></div>
+                    <div class="project-frame__grid-v project-frame__grid-v--right"><span>+</span><span>+</span></div>
+                  </div>
+                  <div class="project-frame__overlay"></div>
+                  <div class="project-frame__content">
+                    <div class="project-frame__number-row">
+                      <span class="project-frame__number">02</span>
+                      <span class="project-frame__number">02</span>
+                    </div>
+                    <p class="project-frame__description max-lg:hidden">Fully private AWS architecture with VPN-only access. Private EKS & RDS using modular Terraform. CI/CD with zero-downtime deployments.</p>
+                    <h2 class="project-frame__title">GSTR – Secure VPN Deployment</h2>
+                    <div class="project-frame__thumb">
+                      <img src="images/alora.png" alt="GSTR" />
+                    </div>
+                    <div class="project-frame__tags">
+                      <span>Terraform</span>
+                      <span>AWS EKS</span>
+                      <span>VPN</span>
+                      <span>CI/CD</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-frame lightbox-trigger cinematic-frame">
+              <div class="project-frame__parallax-wrapper">
+                <div class="project-frame__image-container">
+                  <img src="images/hot.PNG" alt="FastX Food Ordering Platform" class="project-frame__image parallax-image" loading="lazy" />
+                </div>
+                <div class="project-frame__sticky">
+                  <div class="project-frame__grid-overlay cinematic-grid">
+                    <div class="project-frame__grid-v project-frame__grid-v--left"><span>+</span><span>+</span></div>
+                    <div class="project-frame__grid-v project-frame__grid-v--center"><span>+</span><span>+</span></div>
+                    <div class="project-frame__grid-v project-frame__grid-v--right"><span>+</span><span>+</span></div>
+                  </div>
+                  <div class="project-frame__overlay"></div>
+                  <div class="project-frame__content">
+                    <div class="project-frame__number-row">
+                      <span class="project-frame__number">03</span>
+                      <span class="project-frame__number">03</span>
+                    </div>
+                    <p class="project-frame__description max-lg:hidden">Microservices for admin, vendor, and customer modules. Deployed on AWS EKS with Prometheus & Grafana monitoring.</p>
+                    <h2 class="project-frame__title">FastX – Food Ordering Platform</h2>
+                    <div class="project-frame__thumb">
+                      <img src="images/hot.PNG" alt="FastX" />
+                    </div>
+                    <div class="project-frame__tags">
+                      <span>Node.js</span>
+                      <span>AWS EKS</span>
+                      <span>Prometheus</span>
+                      <span>Grafana</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Block - Projects Pinned #01 with Section Title Start -->
 
+          <!-- Recent Work - Side-cards -->
+          <div class="recent-work recent-work--side-cards">
+            <div class="recent-work__section-header">
+              <div class="recent-work__section-title-wrap">
+                <span class="recent-work__section-count">01 — 05</span>
+                <h2 class="recent-work__section-title fill-text">Recent Work</h2>
+              </div>
+            </div>
+
+            <div class="side-cards">
+              <div class="side-card" data-index="0">
+                <div class="side-card__image-wrap side-card__image-wrap--left">
+                  <img src="images/alora.png" alt="AI Chatbot" class="side-card__image zoom-out-image" />
+                </div>
+                <div class="side-card__content side-card__content--right">
+                  <div class="side-card__tools tools tools--rotate-left">
+                    <span class="side-card__tool">OpenAI</span>
+                    <span class="side-card__tool">RAG</span>
+                    <span class="side-card__tool">WhatsApp</span>
+                    <span class="side-card__tool">Twilio</span>
+                  </div>
+                  <div class="side-card__title-wrap title title--rotate-left">
+                    <h3 class="side-card__title">AI Chatbot (AI + Live Agent + WhatsApp)</h3>
+                    <a href="works-simple.html" class="side-card__link" target="_blank">View Project →</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="side-card" data-index="1">
+                <div class="side-card__image-wrap side-card__image-wrap--right">
+                  <img src="images/eomm.png" alt="Yummysouth" class="side-card__image zoom-out-image" />
+                </div>
+                <div class="side-card__content side-card__content--left">
+                  <div class="side-card__tools tools tools--rotate-right">
+                    <span class="side-card__tool">Node.js</span>
+                    <span class="side-card__tool">E-commerce</span>
+                    <span class="side-card__tool">Redis</span>
+                  </div>
+                  <div class="side-card__title-wrap title title--rotate-right">
+                    <h3 class="side-card__title">Yummysouth – E-commerce Platform</h3>
+                    <a href="works-simple.html" class="side-card__link" target="_blank">View Project →</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="side-card" data-index="2">
+                <div class="side-card__image-wrap side-card__image-wrap--left">
+                  <img src="images/hot.PNG" alt="MyBuddy" class="side-card__image zoom-out-image" />
+                </div>
+                <div class="side-card__content side-card__content--right">
+                  <div class="side-card__tools tools tools--rotate-left">
+                    <span class="side-card__tool">Node.js</span>
+                    <span class="side-card__tool">S3</span>
+                    <span class="side-card__tool">CloudFront</span>
+                  </div>
+                  <div class="side-card__title-wrap title title--rotate-left">
+                    <h3 class="side-card__title">MyBuddy – Social Platform</h3>
+                    <a href="works-simple.html" class="side-card__link" target="_blank">View Project →</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="side-card" data-index="3">
+                <div class="side-card__image-wrap side-card__image-wrap--right">
+                  <img src="images/alora.png" alt="OSTA" class="side-card__image zoom-out-image" />
+                </div>
+                <div class="side-card__content side-card__content--left">
+                  <div class="side-card__tools tools tools--rotate-right">
+                    <span class="side-card__tool">AWS DMS</span>
+                    <span class="side-card__tool">MySQL</span>
+                    <span class="side-card__tool">Oracle</span>
+                  </div>
+                  <div class="side-card__title-wrap title title--rotate-right">
+                    <h3 class="side-card__title">OSTA – Database Migration System</h3>
+                    <a href="works-simple.html" class="side-card__link" target="_blank">View Project →</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="side-card" data-index="4">
+                <div class="side-card__image-wrap side-card__image-wrap--left">
+                  <img src="images/hot.PNG" alt="JCGoldandDiamonds" class="side-card__image zoom-out-image" />
+                </div>
+                <div class="side-card__content side-card__content--right">
+                  <div class="side-card__tools tools tools--rotate-left">
+                    <span class="side-card__tool">Node.js</span>
+                    <span class="side-card__tool">AWS EC2</span>
+                    <span class="side-card__tool">MySQL</span>
+                  </div>
+                  <div class="side-card__title-wrap title title--rotate-left">
+                    <h3 class="side-card__title">JCGoldandDiamonds – E-commerce Website</h3>
+                    <a href="works-simple.html" class="side-card__link" target="_blank">View Project →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- Section - Projects Pinned #02 End -->
+      </section>
+      <!-- Section - Projects (Work Section) End -->
 
       <!-- Section - Tech Stack Start -->
       <div class="mxd-section padding-grid-pre-mtext">
@@ -1981,6 +2023,7 @@
     <!-- Load Scripts Start -->
     <script src="js/libs.min.js"></script>
     <script src="js/app.min.js"></script>
+    <script src="worksection/work-sections.js"></script>
     <!-- counters -->
     <script>
       const statsCounter1 = new countUp.CountUp("stats-counter-1", 50, optionsPlus);
