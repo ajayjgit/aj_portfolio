@@ -1201,12 +1201,21 @@
             </div>
           </div>
 
-          <!-- Featured Work - Cinematic parallax frames -->
+          <!-- Featured Work - Linefolio style: fixed center preview + scrolling backgrounds -->
           <div class="work-section__projects" id="featured-projects">
-            <div class="project-frame lightbox-trigger cinematic-frame">
+            <!-- Fixed center preview: split view – top/bottom based on line position -->
+            <div class="project-center-preview" id="project-center-preview" aria-hidden="true">
+              <div class="project-center-preview__frame">
+                <img src="images/eomm.png" data-project="0" class="project-center-preview__img" alt="Sealed" />
+                <img src="images/alora.png" data-project="1" class="project-center-preview__img" alt="GSTR" />
+                <img src="images/hot.PNG" data-project="2" class="project-center-preview__img" alt="FastX" />
+              </div>
+            </div>
+
+            <div class="project-frame lightbox-trigger cinematic-frame" data-index="0">
               <div class="project-frame__parallax-wrapper">
                 <div class="project-frame__image-container">
-                  <img src="images/eomm.png" alt="Sealed Delivery Partner Application" class="project-frame__image parallax-image" loading="lazy" />
+                  <img src="images/eomm.png" alt="Sealed" class="project-frame__image parallax-image" loading="lazy" />
                 </div>
                 <div class="project-frame__sticky">
                   <div class="project-frame__grid-overlay cinematic-grid">
@@ -1215,16 +1224,13 @@
                     <div class="project-frame__grid-v project-frame__grid-v--right"><span>+</span><span>+</span></div>
                   </div>
                   <div class="project-frame__overlay"></div>
-                  <div class="project-frame__content">
+                  <div class="project-frame__content project-frame__content--no-thumb">
                     <div class="project-frame__number-row">
                       <span class="project-frame__number">01</span>
                       <span class="project-frame__number">01</span>
                     </div>
                     <p class="project-frame__description max-lg:hidden">Microservices using NestJS & Node.js. MQTT-based real-time delivery tracking. MongoDB, Redis, JWT auth. Deployed on private AWS EKS.</p>
                     <h2 class="project-frame__title">Sealed – Delivery Partner App</h2>
-                    <div class="project-frame__thumb">
-                      <img src="images/eomm.png" alt="Sealed" />
-                    </div>
                     <div class="project-frame__tags">
                       <span>NestJS</span>
                       <span>Node.js</span>
@@ -1237,10 +1243,10 @@
               </div>
             </div>
 
-            <div class="project-frame lightbox-trigger cinematic-frame">
+            <div class="project-frame lightbox-trigger cinematic-frame" data-index="1">
               <div class="project-frame__parallax-wrapper">
                 <div class="project-frame__image-container">
-                  <img src="images/alora.png" alt="GSTR Project" class="project-frame__image parallax-image" loading="lazy" />
+                  <img src="images/alora.png" alt="GSTR" class="project-frame__image parallax-image" loading="lazy" />
                 </div>
                 <div class="project-frame__sticky">
                   <div class="project-frame__grid-overlay cinematic-grid">
@@ -1249,16 +1255,13 @@
                     <div class="project-frame__grid-v project-frame__grid-v--right"><span>+</span><span>+</span></div>
                   </div>
                   <div class="project-frame__overlay"></div>
-                  <div class="project-frame__content">
+                  <div class="project-frame__content project-frame__content--no-thumb">
                     <div class="project-frame__number-row">
                       <span class="project-frame__number">02</span>
                       <span class="project-frame__number">02</span>
                     </div>
                     <p class="project-frame__description max-lg:hidden">Fully private AWS architecture with VPN-only access. Private EKS & RDS using modular Terraform. CI/CD with zero-downtime deployments.</p>
                     <h2 class="project-frame__title">GSTR – Secure VPN Deployment</h2>
-                    <div class="project-frame__thumb">
-                      <img src="images/alora.png" alt="GSTR" />
-                    </div>
                     <div class="project-frame__tags">
                       <span>Terraform</span>
                       <span>AWS EKS</span>
@@ -1270,10 +1273,10 @@
               </div>
             </div>
 
-            <div class="project-frame lightbox-trigger cinematic-frame">
+            <div class="project-frame lightbox-trigger cinematic-frame" data-index="2">
               <div class="project-frame__parallax-wrapper">
                 <div class="project-frame__image-container">
-                  <img src="images/hot.PNG" alt="FastX Food Ordering Platform" class="project-frame__image parallax-image" loading="lazy" />
+                  <img src="images/hot.PNG" alt="FastX" class="project-frame__image parallax-image" loading="lazy" />
                 </div>
                 <div class="project-frame__sticky">
                   <div class="project-frame__grid-overlay cinematic-grid">
@@ -1282,16 +1285,13 @@
                     <div class="project-frame__grid-v project-frame__grid-v--right"><span>+</span><span>+</span></div>
                   </div>
                   <div class="project-frame__overlay"></div>
-                  <div class="project-frame__content">
+                  <div class="project-frame__content project-frame__content--no-thumb">
                     <div class="project-frame__number-row">
                       <span class="project-frame__number">03</span>
                       <span class="project-frame__number">03</span>
                     </div>
                     <p class="project-frame__description max-lg:hidden">Microservices for admin, vendor, and customer modules. Deployed on AWS EKS with Prometheus & Grafana monitoring.</p>
                     <h2 class="project-frame__title">FastX – Food Ordering Platform</h2>
-                    <div class="project-frame__thumb">
-                      <img src="images/hot.PNG" alt="FastX" />
-                    </div>
                     <div class="project-frame__tags">
                       <span>Node.js</span>
                       <span>AWS EKS</span>

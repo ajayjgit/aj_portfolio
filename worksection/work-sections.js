@@ -23,27 +23,105 @@
   function initCinematic2Animations(section) {
     gsap.registerPlugin(ScrollTrigger);
 
-    // 1. Linefolio-style parallax: image moves & scales during scroll (centered + offset)
-    const parallaxImages = section.querySelectorAll('.parallax-image');
     const projectFrames = section.querySelectorAll('.project-frame');
-    parallaxImages.forEach(function(img, i) {
-      const frame = projectFrames[i];
-      if (!frame) return;
-      gsap.fromTo(img,
-        { yPercent: -62, scale: 1.18 },
-        {
-          yPercent: -38,
-          scale: 1.02,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: frame,
-            start: 'top bottom',
-            end: 'bottom top',
-            scrub: 1.5
+    const parallaxImages = section.querySelectorAll('.parallax-image');
+    const centerPreview = document.getElementById('project-center-preview');
+    const centerImages = centerPreview ? centerPreview.querySelectorAll('.project-center-preview__img') : [];
+
+    // Background parallax (no pin – backgrounds scroll normally)
+    projectFrames.forEach(function(frame, i) {
+      const img = parallaxImages[i];
+      if (img) {
+        gsap.fromTo(img,
+          { yPercent: -62, scale: 1.18 },
+          {
+            yPercent: -38,
+            scale: 1.02,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: frame,
+              start: 'top bottom',
+              end: 'bottom top',
+              scrub: 1.5
+            }
+          }
+        );
+      }
+    });
+
+    // Fixed center preview: show when work section in view
+    if (centerPreview) {
+      ScrollTrigger.create({
+        trigger: section,
+        start: 'top bottom',
+        end: 'bottom top',
+        onEnter: function() { centerPreview.classList.add('is-visible'); },
+        onLeaveBack: function() { centerPreview.classList.remove('is-visible'); },
+        onLeave: function() { centerPreview.classList.remove('is-visible'); },
+        onEnterBack: function() { centerPreview.classList.add('is-visible'); }
+      });
+    }
+
+    // Split view: line drives clip – top half = upper project, bottom half = lower
+    function updateCenterSplit() {
+      if (!centerImages.length || !centerPreview) return;
+      const box = centerPreview.querySelector('.project-center-preview__frame');
+      if (!box) return;
+      const boxRect = box.getBoundingClientRect();
+      const boxTop = boxRect.top;
+      const boxHeight = boxRect.height;
+
+      centerImages.forEach(function(img, i) {
+        let clipPath = 'inset(0 0 0 0)';
+        let opacity = 0;
+        const n = projectFrames.length;
+
+        if (i === 0) {
+          const lineY = projectFrames[0].getBoundingClientRect().bottom;
+          const split = ((lineY - boxTop) / boxHeight) * 100;
+          if (split >= 100) {
+            opacity = 1;
+          } else if (split > 0) {
+            clipPath = 'inset(0 0 ' + (100 - split) + '% 0)';
+            opacity = 1;
+          }
+        } else if (i === n - 1) {
+          const lineY = projectFrames[n - 2].getBoundingClientRect().bottom;
+          const split = ((lineY - boxTop) / boxHeight) * 100;
+          if (split <= 0) {
+            opacity = 1;
+          } else if (split < 100) {
+            clipPath = 'inset(' + split + '% 0 0 0)';
+            opacity = 1;
+          }
+        } else {
+          const lineUp = projectFrames[i].getBoundingClientRect().bottom;
+          const lineLow = projectFrames[i - 1].getBoundingClientRect().bottom;
+          const splitUp = ((lineUp - boxTop) / boxHeight) * 100;
+          const splitLow = ((lineLow - boxTop) / boxHeight) * 100;
+          if (splitLow <= 0 && splitUp >= 100) {
+            opacity = 1;
+          } else if (splitUp > 0 && splitUp < 100) {
+            clipPath = 'inset(0 0 ' + (100 - splitUp) + '% 0)';
+            opacity = 1;
+          } else if (splitLow > 0 && splitLow < 100) {
+            clipPath = 'inset(' + splitLow + '% 0 0 0)';
+            opacity = 1;
           }
         }
-      );
+
+        img.style.clipPath = clipPath;
+        img.style.opacity = opacity;
+      });
+    }
+
+    ScrollTrigger.create({
+      trigger: section,
+      start: 'top bottom',
+      end: 'bottom top',
+      onUpdate: updateCenterSplit
     });
+    updateCenterSplit();
 
     // 2. Fill-text scroll reveal
     const fillTexts = section.querySelectorAll('.fill-text, .fill-text-y');
@@ -141,15 +219,65 @@
       observer.observe(el);
     });
 
-    // Simple parallax fallback (no GSAP)
+    // Fixed center preview fallback
+    const centerPreview = document.getElementById('project-center-preview');
+    const centerImages = centerPreview ? centerPreview.querySelectorAll('.project-center-preview__img') : [];
+    const frames = section.querySelectorAll('.project-frame');
+
+    if (centerPreview && centerImages.length) {
+      const sectionObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          centerPreview.classList.toggle('is-visible', entry.isIntersecting);
+        });
+      }, { threshold: 0.1 });
+      sectionObserver.observe(section);
+
+      function updateSplit() {
+        const box = centerPreview.querySelector('.project-center-preview__frame');
+        if (!box) return;
+        const boxTop = box.getBoundingClientRect().top;
+        const boxHeight = box.getBoundingClientRect().height;
+        const n = frames.length;
+        centerImages.forEach(function(img, i) {
+          let clipPath = 'inset(0 0 0 0)';
+          let opacity = 0;
+          if (i === 0) {
+            const split = ((frames[0].getBoundingClientRect().bottom - boxTop) / boxHeight) * 100;
+            if (split >= 100) opacity = 1;
+            else if (split > 0) { clipPath = 'inset(0 0 ' + (100 - split) + '% 0)'; opacity = 1; }
+          } else if (i === n - 1) {
+            const split = ((frames[n - 2].getBoundingClientRect().bottom - boxTop) / boxHeight) * 100;
+            if (split <= 0) opacity = 1;
+            else if (split < 100) { clipPath = 'inset(' + split + '% 0 0 0)'; opacity = 1; }
+          } else {
+            const splitUp = ((frames[i].getBoundingClientRect().bottom - boxTop) / boxHeight) * 100;
+            const splitLow = ((frames[i - 1].getBoundingClientRect().bottom - boxTop) / boxHeight) * 100;
+            if (splitLow <= 0 && splitUp >= 100) opacity = 1;
+            else if (splitUp > 0 && splitUp < 100) { clipPath = 'inset(0 0 ' + (100 - splitUp) + '% 0)'; opacity = 1; }
+            else if (splitLow > 0 && splitLow < 100) { clipPath = 'inset(' + splitLow + '% 0 0 0)'; opacity = 1; }
+          }
+          img.style.clipPath = clipPath;
+          img.style.opacity = opacity;
+        });
+      }
+      let ticking = false;
+      window.addEventListener('scroll', function() {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(function() { updateSplit(); ticking = false; });
+      });
+      updateSplit();
+    }
+
+    // Simple parallax fallback for backgrounds
     const parallaxImages = section.querySelectorAll('.parallax-image');
-    let ticking = false;
+    let tickParallax = false;
     window.addEventListener('scroll', function() {
-      if (ticking) return;
-      ticking = true;
+      if (tickParallax) return;
+      tickParallax = true;
       requestAnimationFrame(function() {
-        parallaxImages.forEach(function(img) {
-          const frame = img.closest('.project-frame');
+        parallaxImages.forEach(function(img, i) {
+          const frame = frames[i];
           if (!frame) return;
           const rect = frame.getBoundingClientRect();
           const vh = window.innerHeight;
@@ -160,7 +288,7 @@
             img.style.transform = 'translateY(' + yPercent + '%) scale(' + scale + ')';
           }
         });
-        ticking = false;
+        tickParallax = false;
       });
     });
   }

@@ -176,16 +176,66 @@
 }
 
 /* ============================================
-   CINEMATIC-2: Featured Parallax with Overlay
-   Linefolio-style: extended scroll per frame,
-   sticky overlay, image parallax
+   CINEMATIC: Fixed center preview – split view by line position
+   Top half = upper project, bottom half = lower (clip-path from scroll)
    ============================================ */
+
+.project-center-preview {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 32rem;
+  aspect-ratio: 16/12;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-center-preview.is-visible {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .project-center-preview { max-width: 42rem; }
+}
+
+@media (min-width: 1024px) {
+  .project-center-preview { max-width: 36rem; }
+}
+
+.project-center-preview__frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.project-center-preview__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Scrolling project frames – each ends with a line */
 .project-frame {
   position: relative;
-  /* 200vh = each project "sticks" for 2 viewports of scroll (cinematic feel) */
-  min-height: 200vh;
+  height: 100vh;
+  width: 100%;
   overflow: clip;
   margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.project-frame:last-child {
+  border-bottom: none;
 }
 
 .project-frame.cinematic-frame {
@@ -193,16 +243,17 @@
 }
 
 .project-frame__parallax-wrapper {
-  position: relative;
-  min-height: 200vh;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 
-/* Image container: sticky so it stays in view; image inside gets parallax via GSAP */
 .project-frame__image-container {
-  position: sticky;
-  top: 0;
-  height: 100vh;
+  position: absolute;
+  inset: 0;
   width: 100%;
+  height: 100%;
   overflow: hidden;
   z-index: 1;
 }
@@ -218,14 +269,16 @@
   will-change: transform;
 }
 
-/* Overlay: sticks on top of image; margin-top overlaps with image container */
 .project-frame__sticky {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  margin-top: -100vh;
+  position: absolute;
+  inset: 0;
   pointer-events: none;
   z-index: 10;
+}
+
+/* Hide thumb in content when using fixed center preview */
+.project-frame__content--no-thumb .project-frame__thumb {
+  display: none;
 }
 
 .project-frame__sticky * {
