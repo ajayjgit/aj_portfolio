@@ -49,22 +49,20 @@
       }
     });
 
-    // Fixed center preview: show when work section in view
-    if (centerPreview) {
-      ScrollTrigger.create({
-        trigger: section,
-        start: 'top bottom',
-        end: 'bottom top',
-        onEnter: function() { centerPreview.classList.add('is-visible'); },
-        onLeaveBack: function() { centerPreview.classList.remove('is-visible'); },
-        onLeave: function() { centerPreview.classList.remove('is-visible'); },
-        onEnterBack: function() { centerPreview.classList.add('is-visible'); }
-      });
-    }
+    const featuredProjects = document.getElementById('featured-projects');
 
-    // Split view: line drives clip – top half = upper project, bottom half = lower
+    // Split view + visibility: show only when viewport center is inside a project background
     function updateCenterSplit() {
-      if (!centerImages.length || !centerPreview) return;
+      if (!centerPreview) return;
+
+      const centerY = window.innerHeight / 2;
+      const isOverBackground = Array.from(projectFrames).some(function(f) {
+        const r = f.getBoundingClientRect();
+        return centerY >= r.top && centerY <= r.bottom;
+      });
+      centerPreview.classList.toggle('is-visible', isOverBackground);
+
+      if (!centerImages.length) return;
       const box = centerPreview.querySelector('.project-center-preview__frame');
       if (!box) return;
       const boxRect = box.getBoundingClientRect();
@@ -116,7 +114,7 @@
     }
 
     ScrollTrigger.create({
-      trigger: section,
+      trigger: featuredProjects || section,
       start: 'top bottom',
       end: 'bottom top',
       onUpdate: updateCenterSplit
@@ -225,14 +223,13 @@
     const frames = section.querySelectorAll('.project-frame');
 
     if (centerPreview && centerImages.length) {
-      const sectionObserver = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          centerPreview.classList.toggle('is-visible', entry.isIntersecting);
-        });
-      }, { threshold: 0.1 });
-      sectionObserver.observe(section);
-
       function updateSplit() {
+        const centerY = window.innerHeight / 2;
+        const isOverBackground = frames.some(function(f) {
+          const r = f.getBoundingClientRect();
+          return centerY >= r.top && centerY <= r.bottom;
+        });
+        centerPreview.classList.toggle('is-visible', isOverBackground);
         const box = centerPreview.querySelector('.project-center-preview__frame');
         if (!box) return;
         const boxTop = box.getBoundingClientRect().top;
