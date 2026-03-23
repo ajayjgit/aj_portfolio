@@ -28,6 +28,7 @@
     const centerPreview = document.getElementById('project-center-preview');
     const centerImages = centerPreview ? centerPreview.querySelectorAll('.project-center-preview__img') : [];
     const centerLine = document.getElementById('project-center-line');
+    const centerTitle = document.getElementById('project-center-title');
 
     // Background parallax (no pin – backgrounds scroll normally)
     projectFrames.forEach(function(frame, i) {
@@ -113,6 +114,17 @@
         }
         centerLine.style.top = (lineTop >= 0 ? lineTop : 0) + '%';
         centerLine.style.opacity = (lineTop >= 0 && lineTop <= 100) ? '1' : '0';
+      }
+
+      if (centerTitle) {
+        const centerY = window.innerHeight / 2;
+        let activeIndex = 0;
+        for (let i = 0; i < projectFrames.length; i++) {
+          const r = projectFrames[i].getBoundingClientRect();
+          if (centerY >= r.top && centerY <= r.bottom) { activeIndex = i; break; }
+        }
+        const titleEl = projectFrames[activeIndex].querySelector('.project-frame__title');
+        centerTitle.textContent = titleEl ? titleEl.textContent : '';
       }
     }
 
@@ -283,6 +295,19 @@
           }
           centerLine.style.top = (lineTop >= 0 ? lineTop : 0) + '%';
           centerLine.style.opacity = (lineTop >= 0 && lineTop <= 100) ? '1' : '0';
+        }
+
+        const centerTitle = document.getElementById('project-center-title');
+        if (centerTitle) {
+          const centerY = window.innerHeight / 2;
+          for (let i = 0; i < frames.length; i++) {
+            const r = frames[i].getBoundingClientRect();
+            if (centerY >= r.top && centerY <= r.bottom) {
+              const titleEl = frames[i].querySelector('.project-frame__title');
+              centerTitle.textContent = titleEl ? titleEl.textContent : '';
+              break;
+            }
+          }
         }
       }
       let ticking = false;
