@@ -35,6 +35,8 @@
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
     <!-- Template Styles End -->
 
+    <!-- Custom divider image zoom -->
+    <style>.mxd-divider--rounded{border-radius:5rem;overflow:hidden}.divider-image-5{background-size:100%;background-position:center}</style>
     <!-- Custom Browser Color Start -->
     <meta name="theme-color" content="#FAF7F6">
     <meta name="msapplication-navbutton-color" content="#FAF7F6">
@@ -422,9 +424,8 @@
                 <div class="mxd-divider">
                   <div class="mxd-divider__video">
                     <video class="video parallax-video" preload="auto" autoplay="autoplay" loop="loop" muted="muted" poster="video/1920x1080_video-04.webp">
-                      <source type="video/mp4" src="media/1920x1080_video-04.mp4">
-                      <source type="video/webm" src="media/1920x1080_video-04.webm">
-                      <source type="video/ogv" src="1920x1080_video-04.ogv">
+              
+                      <source type="video/mp4" src="hero-video.mp4">
                     </video>
                   </div>
                 </div>
@@ -561,7 +562,7 @@
                   </a>
                   <a class="mxd-hero-02-image__portrait portrait-02" href="works-simple.html">
                     <div class="mxd-hero-02-image__inner type-01 anim-uni-in-up">
-                      <img src="images/09_hero-img.webp" alt="Hero Image">
+                      <img src="images/cloud-hero.webp" alt="Hero Image">
                       <div class="mxd-preview-hover"><i class="mxd-preview-hover__icon icon-small"><img src="images/icon-eye.svg" alt="Eye Icon"></i></div>
                     </div>
                   </a>
@@ -569,13 +570,13 @@
                 <div class="mxd-hero-02-images__row mxd-hero-02-images__row-02">
                   <a class="mxd-hero-02-image__landscape landscape-02" href="works-simple.html">
                     <div class="mxd-hero-02-image__inner type-03 anim-uni-in-up">
-                      <img src="images/10_hero-img.webp" alt="Hero Image">
+                      <img src="images/devops.jpg" alt="Hero Image">
                       <div class="mxd-preview-hover"><i class="mxd-preview-hover__icon icon-small"><img src="images/icon-eye.svg" alt="Eye Icon"></i></div>
                     </div>
                   </a>
                   <a class="mxd-hero-02-image__portrait portrait-xl portrait-03" href="works-simple.html">
                     <div class="mxd-hero-02-image__inner type-02 anim-uni-in-up">
-                      <img src="images/11_hero-img.webp" alt="Hero Image">
+                      <img src="images/k8d.jpg" alt="Hero Image">
                       <div class="mxd-preview-hover"><i class="mxd-preview-hover__icon icon-small"><img src="images/icon-eye.svg" alt="Eye Icon"></i></div>
                     </div>
                   </a>
@@ -583,7 +584,7 @@
                 <div class="mxd-hero-02-images__row mxd-hero-02-images__row-03">
                   <a class="mxd-hero-02-image__portrait portrait-04" href="works-simple.html">
                     <div class="mxd-hero-02-image__inner type-01 anim-uni-in-up">
-                      <img src="images/13_hero-img.webp" alt="Hero Image">
+                      <img src="images/aws-wall.png" alt="Hero Image">
                       <div class="mxd-preview-hover"><i class="mxd-preview-hover__icon icon-small"><img src="images/icon-eye.svg" alt="Eye Icon"></i></div>
                     </div>
                   </a>
@@ -991,35 +992,7 @@
                     </div>
                   </div>
                   <!-- Education -->
-                  <div class="stack-item">
-                    <div class="mxd-services-stack__inner showcase-inner bg-base-opp">
-                      <div class="mxd-services-stack__title showcase-title">
-                        <h3 class="opposite">Education</h3>
-                        <span class="mxd-services-stack__number t-opp-muted">/04</span>
-                      </div>
-                      <div class="mxd-services-stack__info showcase-info">
-                        <p class="t-opposite">M.Sc. Mathematics · Scott Christian College, Nagercoil</p>
-                        <p class="t-opposite">Graduated with 83% (2020–2022). Strong analytical foundation applied to software engineering and cloud architecture.</p>
-                      </div>
-                      <div class="mxd-services-stack__works">
-                        <a class="mxd-services-stack__work" href="#contact">
-                          <img class="mxd-services-stack__preview" src="images/800x400_prv-07.webp" alt="Education">
-                          <div class="mxd-services-stack__tags tags-absolute">
-                            <span class="tag tag-default tag-permanent">Mathematics</span>
-                            <span class="tag tag-default tag-permanent">Analytics</span>
-                          </div>
-                          <div class="mxd-preview-hover"><i class="mxd-preview-hover__icon icon-small"><img src="images/icon-eye.svg" alt="Eye Icon"></i></div>
-                        </a>
-                        <a class="mxd-services-stack__work" href="#contact">
-                          <img class="mxd-services-stack__preview" src="images/800x400_prv-08.webp" alt="Education">
-                          <div class="mxd-services-stack__tags tags-absolute">
-                            <span class="tag tag-default tag-permanent">Problem Solving</span>
-                          </div>
-                          <div class="mxd-preview-hover"><i class="mxd-preview-hover__icon icon-small"><img src="images/icon-eye.svg" alt="Eye Icon"></i></div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+            </div>
                 </div>
               </div>
             </div>
@@ -1031,7 +1004,7 @@
       <!-- Section - Parallax Divider Start -->
       <div class="mxd-section padding-pre-title">
         <div class="mxd-container">
-          <div class="mxd-divider">
+          <div class="mxd-divider mxd-divider--rounded">
             <div class="mxd-divider__image divider-image-5 parallax-img"></div>
           </div>
         </div>
